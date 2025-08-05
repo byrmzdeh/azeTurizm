@@ -23,55 +23,103 @@
 </head>
 
 <body>
-    <header id="header">
+   <header id="header">
         <div class="container-div">
-            <div class="header-left">
-                <a href="/"><img src="https://azeturizm.az/img/logo-azeturizm.png" alt="logo"></a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="/pages/about.html">Şirkət haqqında</a></li>
-                    <li><a href="/pages/services.html">Xidmətlər</a></li>
-                    <li class="tours"><a href="/pages/tours.html">Turlar</a>
-                        <div class="dropdown-tours">
-                            <ul>
-                                <li class="foreign-tours"><a href="">Xarici turlar</a>
-                                    <div class="dropdown-sec">
-                                        <ul>
-                                            <li><a href="">Avropa turları</a></li>
-                                            <li><a href="">Amerika turları</a></li>
-                                            <li><a href="">Asiya turları</a></li>
-                                            <li><a href="">Rusiya turları</a></li>
-                                            <li><a href="">Türkiyə turları</a></li>
-                                        </ul>
-                                    </div>
+            <div class="menu">
+                <div class="header-left">
+                    <a href="/"><img src="https://azeturizm.az/img/logo-azeturizm.png" alt="logo"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/pages/about.html">Şirkət haqqında</a></li>
+                        <li><a href="/pages/services.html">Xidmətlər</a></li>
+                        <li class="tours"><a href="/pages/tours.html">Turlar</a>
+                            <div class="dropdown-tours">
+                                <ul>
+                                    <li class="foreign-tours"><a href="">Xarici turlar</a>
+                                        <div class="dropdown-sec">
+                                            <ul>
+                                                <li><a href="">Avropa turları</a></li>
+                                                <li><a href="">Amerika turları</a></li>
+                                                <li><a href="">Asiya turları</a></li>
+                                                <li><a href="">Rusiya turları</a></li>
+                                                <li><a href="">Türkiyə turları</a></li>
+                                            </ul>
+                                        </div>
 
+                                    </li>
+                                    <li><a href="">Daxili turlar</a></li>
+                                    <li><a href="">Qrup turları</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="/pages/partners.html">Partnyorlar</a></li>
+                        <li><a href="/pages/blog.html">Bloq</a></li>
+                        <li><a href="/pages/contact.html">Əlaqə</a></li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <div class="lang">
+                        <i id="lang-icon" class="fa-solid fa-earth-europe"></i>
+                        <div id="langs">
+                            <ul>
+                                <li>
+                                    <img src="https://azeturizm.az/img/aze.jpg" alt="err">
+                                    <a href="">AZE</a>
                                 </li>
-                                <li><a href="">Daxili turlar</a></li>
-                                <li><a href="">Qrup turları</a></li>
+                                <li>
+                                    <img src="https://azeturizm.az/img/eng.jpg" alt="err">
+                                    <a href="">ENG</a>
+                                </li>
+                                <li>
+                                    <img src="https://azeturizm.az/img/rus.png" alt="err">
+                                    <a href="">RU</a>
+                                </li>
                             </ul>
                         </div>
-                    </li>
-                    <li><a href="/pages/partners.html">Partnyorlar</a></li>
-                    <li><a href="/pages/blog.html">Bloq</a></li>
-                    <li><a href="/pages/contact.html">Əlaqə</a></li>
-                </ul>
-            </nav>
-            <div class="header-right">
-                <div class="lang">
-                    <i class="fa-solid fa-earth-europe"></i>
-                </div>
-                <a href="" class="phone">
-                    <i class="fa-solid fa-phone"></i>
-                    <span> (+99450) 210 95 57</span>
-                </a>
+                    </div>
+                    <a href="" class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <span> (+99450) 210 95 57</span>
+                    </a>
 
-                <button type="button" id="price-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Qiymət təklifi al
-                </button>
+
+                    <button type="button" id="price-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Qiymət təklifi al
+                    </button>
+
+                    <i id="bars" class="fa-solid fa-bars"></i>
+
+
+                </div>
             </div>
 
+
         </div>
+        <div id="res-menu">
+            <div id="close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul>
+                <li><a href="/pages/about.html">Şirkət haqqında</i></a></li>
+                <li><a href="/pages/services.html">Xidmətlər</a></li>
+                <li class="dropdown-item">
+                    <a href="/pages/tours.html" id="toggle-link">Turlar <i
+                            class="fa-solid fa-chevron-down toggle-icon"></i> </a>
+
+                    <ul id="submenu">
+                        <li><a href="">Xarici turlar</a></li>
+                        <li><a href="">Daxili turlar</a></li>
+                        <li><a href="">Qrup turları</a></li>
+                    </ul>
+                </li>
+                <li><a href="/pages/partners.html">Partnyorlar</a></li>
+                <li><a href="/pages/blog.html">Bloq</a></li>
+                <li><a href="/pages/contact.html">Əlaqə</a></li>
+            </ul>
+
+        </div>
+
     </header>
 
     <div class="modal fade" id="exampleModal" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">

@@ -7,145 +7,267 @@ header {
   @include flexCenter;
 
   .container-div {
-    @include flexBetween;
+    .menu {
+      @include flexBetween;
 
-    .header-left {
-      a {
-        img {
-          width: 110px;
-        }
-      }
-    }
-
-    nav {
-      ul {
-        @include flexBetween;
-        column-gap: 22px;
-        padding-left: 0px;
-
-        li {
-          a {
-            color: $text-white;
+      .header-left {
+        a {
+          img {
+            width: 110px;
           }
         }
+      }
 
-        .tours {
+      nav {
+        ul {
+          @include flexBetween;
+          column-gap: 22px;
+          padding-left: 0px;
 
-          position: relative;
-          transition: 0.4s;
+          li {
+            a {
+              color: $text-white;
+            }
+          }
 
-          .dropdown-tours {
-            width: 160px;
-            position: absolute;
-            background-color: $bg-white;
-            border-radius: 7px;
+          .tours {
+
+            position: relative;
             transition: 0.4s;
-            display: none;
 
-            ul {
-              width: 100%;
-              @include flexColumn;
+            .dropdown-tours {
+              width: 160px;
+              position: absolute;
+              background-color: $bg-white;
+              border-radius: 7px;
+              transition: 0.4s;
+              display: none;
 
-              li {
-                padding: 10px 20px;
+              ul {
                 width: 100%;
-                transition: 0.4s;
+                @include flexColumn;
 
-                a {
-                  font-size: 16px;
-                  color: $text-dark-blue;
-                }
-
-                &:hover {
-                  background-color: $bg-color;
-                  border-radius: 7px;
-                }
-              }
-
-              .foreign-tours {
-                .dropdown-sec {
-                  min-width: 180px;
+                li {
+                  padding: 10px 20px;
                   width: 100%;
-                  position: absolute;
-                  z-index: 1;
-                  top: -45px;
-                  left: 160px;
-                  background-color: $bg-white;
-                  border-radius: 7px;
                   transition: 0.4s;
-                  display: none;
 
-                  ul {
-                    li {
-                      transition: 0.4s;
+                  a {
+                    font-size: 16px;
+                    color: $text-dark-blue;
+                  }
 
-                      &:hover {
-                        a {
-                          opacity: 0.6;
+                  &:hover {
+                    background-color: $bg-color;
+                    border-radius: 7px;
+                  }
+                }
+
+                .foreign-tours {
+                  .dropdown-sec {
+                    min-width: 180px;
+                    width: 100%;
+                    position: absolute;
+                    z-index: 1;
+                    top: -45px;
+                    left: 160px;
+                    background-color: $bg-white;
+                    border-radius: 7px;
+                    transition: 0.4s;
+                    display: none;
+
+                    ul {
+                      li {
+                        transition: 0.4s;
+
+                        &:hover {
+                          a {
+                            opacity: 0.6;
+                          }
                         }
                       }
                     }
                   }
+
+                  &:hover {
+                    .dropdown-sec {
+                      display: block;
+                    }
+                  }
+                }
+              }
+            }
+
+            &:hover {
+              .dropdown-tours {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+
+      .header-right {
+        @include flexBetween;
+        column-gap: 30px;
+
+        .lang {
+          position: relative;
+
+          #lang-icon {
+            font-size: 16px;
+            color: $text-white;
+            cursor: pointer;
+          }
+
+          #langs {
+            background-color: $bg-white;
+            @include flexCenter;
+            position: absolute;
+            top: 21px;
+            right: -30px;
+            border-radius: 10px;
+            height: 0;
+            overflow: hidden;
+            transition: 3s ease;
+            padding: 0px;
+
+            ul {
+              padding: 0px 0px;
+
+              li {
+                display: flex;
+                gap: 5px;
+                padding: 6px 12px 6px 10px;
+
+                a {
+                  color: $text-gray;
+                  font-weight: 600;
                 }
 
-                &:hover {
-                  .dropdown-sec {
-                    display: block;
-                  }
+                img {
+                  width: 20px;
+                  height: 20px;
+                  font-size: 13px;
                 }
               }
             }
           }
 
-          &:hover {
-            .dropdown-tours {
-              display: block;
+
+        }
+
+        a {
+          font-size: 16px;
+          color: $text-white;
+
+        }
+
+        #price-btn {
+          min-width: 194px;
+          color: $text-white;
+          height: 43px;
+          font-size: 16px;
+          padding: 9px 34px;
+          border-radius: 56px;
+          background-color: $primary-color;
+          font-weight: bold;
+          animation: showBtn 0.7s infinite ease;
+
+          @keyframes showBtn {
+            0% {
+              box-shadow: 0 0 0 0 rgba(11, 76, 132, 0.2);
+            }
+
+            100% {
+              box-shadow: 0 0 0 15px rgba(11, 76, 132, 0.25);
             }
           }
+        }
+
+        #bars {
+          color: $text-white;
+          font-size: 24px;
+          display: none;
+          cursor: pointer;
         }
       }
     }
 
-    .header-right {
-      @include flexBetween;
-      column-gap: 30px;
+  }
 
-      .lang {
-        i {
-          font-size: 16px;
+  #res-menu {
+    width: 100%;
+    height: 100vh;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 40px;
+    transition: 2s;
+
+    #close {
+      display: inline-flex;
+      width: 40px;
+      height: 40px;
+      justify-content: center;
+      align-items: center;
+      background: $bg-light-grayy;
+      border-radius: 50%;
+      @include flexCenter;
+      margin: 0px 0px 0px auto;
+      cursor: pointer;
+
+      i {
+        position: absolute;
+        color: $text-white;
+        z-index: 3;
+        font-size: 25px;
+      }
+    }
+
+    ul {
+
+      text-align: center;
+      line-height: 2rem;
+
+      li {
+        .toggle-icon {
+          transition: 0.5s;
+        }
+
+        a {
+          color: $text-white;
+          font-size: 18px;
+          font-weight: bolder;
+        }
+      }
+
+      .dropdown-item {
+        a {
           color: $text-white;
         }
       }
 
-      a {
-        font-size: 16px;
+      #submenu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        list-style: none;
+        padding-left: 15px;
         color: $text-white;
-
       }
 
-      #price-btn {
-        min-width: 194px;
-        color: $text-white;
-        height: 43px;
-        font-size: 16px;
-        padding: 9px 34px;
-        border-radius: 56px;
-        background-color: $primary-color;
-        font-weight: bold;
-        animation: showBtn 0.7s infinite ease;
-
-        @keyframes showBtn {
-          0% {
-            box-shadow: 0 0 0 0 rgba(11, 76, 132, 0.2);
-          }
-
-          100% {
-            box-shadow: 0 0 0 15px rgba(11, 76, 132, 0.25);
-          }
-        }
+      .open {
+        max-height: 500px;
       }
+
     }
   }
+
 }
 
 .scrolled {
@@ -154,136 +276,88 @@ header {
   box-shadow: 0 0 10px gray;
 
   .container-div {
-    nav {
-      ul {
-        li {
-          a {
-            color: $text-dark-blue;
+    .menu {
+      nav {
+        ul {
+          li {
+            a {
+              color: $text-dark-blue;
+            }
           }
         }
       }
-    }
 
-    .header-right {
-      .lang {
-        i {
+      .header-right {
+        .lang {
+          #lang-icon {
+            color: $text-dark-blue;
+          }
+        }
+
+        a {
           color: $text-dark-blue;
         }
+
+        #bars {
+          color: $text-dark-blue;
+        }
+
+
       }
-
-      a {
-        color: $text-dark-blue;
-      }
-
-
     }
   }
 
 }
 
 
-.price-quote {
-    @include flexCenter;
-    flex-direction: column;
-    padding: 50px 0px;
-    background-color: $secondary-color;
-
-    .write {
-        width: 85%;
-        @include flexCenter;
-        flex-direction: column;
-        gap: 15px;
 
 
-        h5 {
-            font-size: 32px;
-            font-weight: bolder;
-            letter-spacing: 1px;
-            color: white;
-            font-weight: bolder;
-            text-align: center;
+@media (max-width:768px) {
+  header {
+    .container-div {
+      .menu {
+        @include flexBetween;
+
+        nav {
+          display: none;
         }
 
-        p {
-            color: $text-white;
-            font-size: 16px;
-            text-align: center;
+        .header-right {
+
+
+          a {
+            font-size: 13px;
+
+          }
+
+          #price-btn {
+            display: none;
+          }
+
+          #bars {
+            display: block;
+          }
         }
-
-        .price-btnModal {
-            padding: 10px 15px;
-            font-size: 18px;
-            border: none;
-            transition: .4s;
-            font-weight: 600;
-            background-color: $bg-white;
-            color: $text-dark;
-
-            &:hover {
-                background-color: black;
-                color: $text-white;
-            }
-        }
-
-        .modal {
-            .modal-dialog {
-                .modal-content {
-                    .modal-header {
-                        padding: 20px 50px
-                    }
-
-                    .modal-body {
-                        @include flexCenter;
-
-                        form {
-                            width: 97%;
-                            @include flexColumn;
-                            gap: 10px;
-                            padding: 15px 50px;
-
-                            input {
-                                width: 100%;
-                                border: 2px solid #e6ecf2;
-                                padding: 6px 15px;
-                                border-radius: 4px;
-                                font-size: 16px;
-                                outline: none;
-                                transition: all .3s ease;
-
-                                &::placeholder {
-                                    color: $text-gray;
-                                }
-                            }
-
-                            textarea {
-                                width: 100%;
-                                min-height: 140px;
-                                border: 2px solid #e6ecf2;
-                                padding: 6px 15px;
-                                border-radius: 4px;
-                                font-size: 16px;
-                                outline: none;
-                                transition: all .3s ease;
-
-                                &::placeholder {
-                                    color: $text-gray;
-                                }
-
-                            }
-
-                            .send-btn {
-                                width: 100%;
-                                background-color: $primary-color;
-                                color: $text-white;
-                                line-height: 50px;
-                                transition: 0.3s ease-in-out;
-                                padding: 0 26px;
-                                border-radius: 4px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+  }
+
+}
+
+@media (min-width:768px) and (max-width:1300px) {
+  header {
+    .container-div {
+      .menu {
+        nav {
+          display: none;
+        }
+
+        .header-right {
+          #bars {
+            display: block;
+          }
+        }
+      }
+    }
+  }
 }
