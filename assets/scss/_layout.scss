@@ -1,0 +1,124 @@
+@use './mixins';
+.container-div {
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+.price-quote {
+    @include mixins.flexCenter;
+    flex-direction: column;
+    padding: 50px 0px;
+    background-color: $secondary-color;
+
+    .write {
+        width: 85%;
+        @include mixins.flexCenter;
+        flex-direction: column;
+        gap: 15px;
+
+
+        h5 {
+            font-size: 32px;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            color: white;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        p {
+            color: $text-white;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .price-btnModal {
+            padding: 10px 15px;
+            font-size: 18px;
+            border: none;
+            transition: .4s;
+            font-weight: 600;
+            background-color: $bg-white;
+            color: $text-dark;
+
+            &:hover {
+                background-color: black;
+                color: $text-white;
+            }
+        }
+    }
+}
+
+
+.modal {
+    .modal-dialog {
+        .modal-content {
+            .modal-header {
+                padding: 20px 50px
+            }
+
+            .modal-body {
+                @include mixins.flexCenter;
+
+                form {
+                    width: 97%;
+                    @include mixins.flexColumn;
+                    gap: 10px;
+                    padding: 15px 50px;
+
+                    input {
+                        width: 100%;
+                        border: 2px solid #e6ecf2;
+                        padding: 6px 15px;
+                        border-radius: 4px;
+                        font-size: 16px;
+                        outline: none;
+                        transition: all .3s ease;
+
+                        &::placeholder {
+                            color: $text-gray;
+                        }
+                    }
+
+                    textarea {
+                        width: 100%;
+                        min-height: 140px;
+                        border: 2px solid #e6ecf2;
+                        padding: 6px 15px;
+                        border-radius: 4px;
+                        font-size: 16px;
+                        outline: none;
+                        transition: all .3s ease;
+
+                        &::placeholder {
+                            color: $text-gray;
+                        }
+
+                    }
+
+                    .send-btn {
+                        width: 100%;
+                        background-color: $primary-color;
+                        color: $text-white;
+                        line-height: 50px;
+                        transition: 0.3s ease-in-out;
+                        padding: 0 26px;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+}

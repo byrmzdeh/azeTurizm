@@ -1,0 +1,153 @@
+footer {
+    padding: 4.6rem 0 4.2rem 0;
+
+    .container-div {
+        @include flexColumn;
+        gap: 1rem;
+
+        .upper-part {
+            @include flexColumn;
+            gap: 1rem;
+
+            .upper-part-one {
+                @include flexBetween;
+
+                a {
+                    img {
+                        width: 140px;
+                    }
+                }
+
+                .media {
+                    @include flexColumn;
+                    font-size: 1rem;
+                    line-height: 1.7rem;
+                    color: $text-dark;
+
+                    .media-icons {
+                        @include flexBetween;
+                        margin-top: 1rem;
+                        gap: 1rem;
+
+                        i {
+                            font-size: 1.6rem;
+                            color: $text-blue;
+                        }
+                    }
+                }
+
+                .location {
+                    @include flexColumn;
+                    font-size: 1rem;
+                    line-height: 1.7rem;
+                    color: $text-dark;
+                    font-weight: 900;
+
+                }
+
+                .make {
+                    @include flexColumn;
+                    line-height: 1.7rem;
+
+                    span {
+                        color: $text-dark;
+                    }
+
+                    img {
+                        width: 110px;
+                    }
+                }
+
+            }
+
+            .upper-part-two {
+                span {
+                    color: $text-gray;
+                    line-height: 1.7rem;
+                    font-size: 15px;
+                    text-align: justify;
+                }
+            }
+
+        }
+
+        .end {
+            @include flexBetween;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid $bg-light-grayy;
+
+            span {
+                font-size: 1.2rem;
+                line-height: 1.7rem;
+                color: $text-gray;
+                font-style: normal;
+            }
+
+            a {
+                span {
+                    color: $text-mid-gray;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 1.4rem;
+                    line-height: 1.6rem;
+                }
+
+                i {
+                    font-size: 24px;
+                    color: $secondary-color;
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        .container-div {
+            .upper-part {
+                .upper-part-one {
+                    @include flexColumn;
+                    font-size: 15px;
+                    gap: 10px;
+
+                    .location {
+                        @include flexCenter;
+                        text-align: center;
+                    }
+                }
+
+                .upper-part-two {
+                    display: none;
+                }
+            }
+
+            .end {
+                margin-top: 1rem;
+
+                span {
+                    font-size: 15px;
+                }
+
+                a {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width: 1200px) {
+    footer {
+        .container-div {
+            .upper-part {
+                .upper-part-one {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+                }
+            }
+        }
+    }
+}

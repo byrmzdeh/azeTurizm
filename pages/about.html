@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/assets/scss/css/main.css">
+    <script type="module" src="/js/main.js"></script>
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="container-div">
+            <div class="header-left">
+                <a href="/"><img src="https://azeturizm.az/img/logo-azeturizm.png" alt="logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/pages/about.html">Şirkət haqqında</a></li>
+                    <li><a href="/pages/services.html">Xidmətlər</a></li>
+                    <li class="tours"><a href="/pages/tours.html">Turlar</a>
+                        <div class="dropdown-tours">
+                            <ul>
+                                <li class="foreign-tours"><a href="">Xarici turlar</a>
+                                    <div class="dropdown-sec">
+                                        <ul>
+                                            <li><a href="">Avropa turları</a></li>
+                                            <li><a href="">Amerika turları</a></li>
+                                            <li><a href="">Asiya turları</a></li>
+                                            <li><a href="">Rusiya turları</a></li>
+                                            <li><a href="">Türkiyə turları</a></li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+                                <li><a href="">Daxili turlar</a></li>
+                                <li><a href="">Qrup turları</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="/pages/partners.html">Partnyorlar</a></li>
+                    <li><a href="/pages/blog.html">Bloq</a></li>
+                    <li><a href="/pages/contact.html">Əlaqə</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="lang">
+                    <i class="fa-solid fa-earth-europe"></i>
+                </div>
+                <a href="" class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <span> (+99450) 210 95 57</span>
+                </a>
+
+                <button type="button" id="price-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Qiymət təklifi al
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="modal fade" id="exampleModal" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Qiymət təklifi al</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label for="name"></label>
+                        <input type="text" id="name" placeholder="Ad, soyad" required>
+
+                        <label for="phone"></label>
+                        <input type="text" id="phone" placeholder="Nömrəniz" required>
+
+                        <label for="company"></label>
+                        <input type="text" id="company" placeholder="Təşkil etdiyiniz şirkət">
+
+                        <label for="notes"></label>
+                        <textarea id="notes" placeholder="Qeydləriniz"></textarea>
+
+                        <button class="send-btn">Göndər</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section id="one">
+        <div class="container-div">
+            <div class="content">
+                <div class="content-info">
+                    <h1>Haqqımızda</h1>
+                </div>
+                <div class="content-location">
+                    <a href="/" class="back">
+                        <div class="arrow">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                        <span>Geriyə qayıt</span>
+                    </a>
+                    <div class="locatian-addres">
+                        <a href="/" class="home-page">Ana Səhifə </a>
+                        <a href="/pages/about.html" class="current-page"> / Haqqımızda</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container-div">
+            <div class="texts">
+                <div class="text">
+                    <h2>Haqqımızda</h2>
+                    <p>2007-ci ildə əsası qoyulan <b>“NOBEL PRESTİGE”</b> şirkəti olaraq fəaliyyətə başlamışdır. Hazırda
+                        2017-ci
+                        ildən adı dəyişilərək <b>"AZE TURİZM"</b> şirkəti olaraq fəaliyyətinə davam edir. Azərbaycanda
+                        turizmin
+                        inkişafına öz töhfəsini vermiş, bu sahədə tanınmış şirkətlərdən birinə çevrilmişdir. Səfərlərin
+                        yüksək səviyyədə və büdcənizə uyğun şəkildə təşkil olunması əsas hədəflərimizdəndir.
+                    </p>
+                    <b>Şirkətin əsas fəaliyyət sahələri:</b>
+                    <p>İstirahət, müalicə, biznes, mice turlar və s. daxil olmaqla həm Outgoing (göndərmə), həm də
+                        Inbound
+                        (gəlmə) turizmi üzrə fəaliyyət göstərir.
+                        Outgoing üzrə turirstlərimizin ən çox seçim etdiyi ölkələr sırasına Türkiyə, Dubay, Misir,
+                        Monteneqro və Avropa ölkələri - Polşa, Estoniya, Fransa, Almaniya, Latviya, Ruminiya,
+                        Özbəkistan,
+                        Qırğızıstan və s. ölkələrlə əməkdaşlıq edir və ölkəmizə turistlər cəlb edir.</p>
+                </div>
+                <img src="https://azeturizm.az/img/5a37409b04b656cf3b280d03e81003a2.jpg" alt="err">
+            </div>
+
+
+            <div class="texts">
+                <img src="https://azeturizm.az/img/logo-azeturizm.png" alt="err">
+
+                <div class="text">
+                    <h2>Missiyamız</h2>
+                    <p>2007-ci ildə Nobel Prestij adı altında fəaliyyətə başlayan Aze Turizm 16 ildir Azərbaycan turizm
+                        sektorunda uğurlu fəaliyyətini davam etdirir. 2017-ci ildən şirkətimiz turizm bazarında yeni adı
+                        Aze
+                        Turizm brendi altında tanınır. Şirkətimiz Azərbaycan Respublikasının Dövlət Turizm Agentliyi
+                        tərəfindən rəsmi qeydiyyata alınmış və Azərbaycan Turizm Agentlikləri Assosiyasıyasının rəsmi
+                        üzvlərindəndir. Aze Turizmin fəaliyyət misiyasının əsasında Azərbaycan yerli və gəlmə turizmin
+                        inkişafını sürətləndirmək, Azərbaycan mədəniyyətini dünyaya tanıtmaq və ölkəmizi regionun və
+                        dünyanın əsas turizm ölkələrindən birinə çevirməkdir. Şirkətimiz bu yolda inamlı adımmlar
+                        atmaqdadır; Beləki Aze Turizm xaricdə keçirilən bir çox turizm sərgilərində iştirak etmiş ölkəyə
+                        xarici turistlərin gəlməsində mühüm rol oynamışdır. Hazırda isə şirkətimizin fəaliyyət
+                        sahələrində
+                        yerli və əcnəbi vətəndaşlar üçün daxili və xarici turların təşkili, aviabiletlərin satışı, viza
+                        dəstəyi və işgüzar səyahətlərin təşkili kimi fəaliyyətlər daxildir.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="price-quote">
+        <div class="write">
+            <h5>İndividual qiymət təklifinə ehtiyacınız var?</h5>
+            <p>Formu doldurun və ən qısa zamanda nümayəndəmiz tərəfindən biznesinizə özəl individual təklifi əldə edin
+            </p>
+            <button type="button" class=" price-btnModal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Qiymət təklifi al
+            </button>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container-div">
+            <div class="upper-part">
+                <div class="upper-part-one">
+                    <a href="/"><img src="https://azeturizm.az/img/logo-azeturizm.png" alt="err"></a>
+                    <div class="media">
+                        <span>Sosial şəbəkələrdə biz</span>
+                        <div class="media-icons">
+                            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <div class="location">
+                        <span>Baş ofisimiz</span>
+                        <span>Dilarə Əliyeva Küçəsi 235A, Nəsimi r., Bakı, Azərbaycan -</span>
+                        <a href="https://maps.app.goo.gl/urpRErADWhrh8f5s5">Xəritədə baxın</a>
+                    </div>
+
+                    <div class="make">
+                        <span>Saytı hazırladı</span>
+                        <a href="/"> <img src="https://okmedia.az/img-yeni/okmedialogo1.png" alt="err"></a>
+                    </div>
+
+                </div>
+                <div class="upper-part-two">
+                    <span>2007-ci ildə əsası qoyulan “NOBEL PRESTİGE” şirkəti olaraq fəaliyyətə başlamışdır. Hazırda
+                        2017-ci ildən adı dəyişilərək "AZE TURİZM " şirkəti olaraq fəaliyyətinə davam edir. Azərbaycanda
+                        turizmin inkişafına öz töhfəsini vermiş, bu sahədə tanınmış şirkətlərdən birinə çevrilmişdir.
+                        Səfərlərin yüksək səviyyədə və büdcənizə uyğun şəkildə təşkil olunması əsas hədəflərimizdəndir.
+                        Şirkətin əsas fəaliyyət sahələri: İstirahət, müalicə, biznes, mice turlar və s. daxil olmaqla
+                        həm Outgoing (göndərmə), həm də Incoming (gəlmə) turizmi üzrə fəaliyyət göstərir. Outgoing üzrə
+                        turirstlərimizin ən çox seçim etdiyi ölkələr sırasına Türkiyə, Dubay, Misir, Monteneqro və
+                        Avropa ölkələri - Polşa, Estoniya, Fransa, Almaniya, Latviya, Ruminiya, Özbəkistan,
+                        Türkmənistan, Qırğızıstan və s. ölkələrlə əməkdaşlıq edir və ölkəmizə turistlər cəlb
+                        edir.</span>
+                </div>
+            </div>
+
+            <div class="end">
+                <span>Azeturizm LLC - 2024 Bütün hüquqlar qorunur.</span>
+                <a href="#one">
+                    <span>Yuxarı qalxmaq.</span>
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

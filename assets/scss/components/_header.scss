@@ -1,0 +1,289 @@
+header {
+  width: 100%;
+  min-height: 103px;
+  background-color: transparent;
+  position: fixed;
+  z-index: 5;
+  @include flexCenter;
+
+  .container-div {
+    @include flexBetween;
+
+    .header-left {
+      a {
+        img {
+          width: 110px;
+        }
+      }
+    }
+
+    nav {
+      ul {
+        @include flexBetween;
+        column-gap: 22px;
+        padding-left: 0px;
+
+        li {
+          a {
+            color: $text-white;
+          }
+        }
+
+        .tours {
+
+          position: relative;
+          transition: 0.4s;
+
+          .dropdown-tours {
+            width: 160px;
+            position: absolute;
+            background-color: $bg-white;
+            border-radius: 7px;
+            transition: 0.4s;
+            display: none;
+
+            ul {
+              width: 100%;
+              @include flexColumn;
+
+              li {
+                padding: 10px 20px;
+                width: 100%;
+                transition: 0.4s;
+
+                a {
+                  font-size: 16px;
+                  color: $text-dark-blue;
+                }
+
+                &:hover {
+                  background-color: $bg-color;
+                  border-radius: 7px;
+                }
+              }
+
+              .foreign-tours {
+                .dropdown-sec {
+                  min-width: 180px;
+                  width: 100%;
+                  position: absolute;
+                  z-index: 1;
+                  top: -45px;
+                  left: 160px;
+                  background-color: $bg-white;
+                  border-radius: 7px;
+                  transition: 0.4s;
+                  display: none;
+
+                  ul {
+                    li {
+                      transition: 0.4s;
+
+                      &:hover {
+                        a {
+                          opacity: 0.6;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                &:hover {
+                  .dropdown-sec {
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+
+          &:hover {
+            .dropdown-tours {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    .header-right {
+      @include flexBetween;
+      column-gap: 30px;
+
+      .lang {
+        i {
+          font-size: 16px;
+          color: $text-white;
+        }
+      }
+
+      a {
+        font-size: 16px;
+        color: $text-white;
+
+      }
+
+      #price-btn {
+        min-width: 194px;
+        color: $text-white;
+        height: 43px;
+        font-size: 16px;
+        padding: 9px 34px;
+        border-radius: 56px;
+        background-color: $primary-color;
+        font-weight: bold;
+        animation: showBtn 0.7s infinite ease;
+
+        @keyframes showBtn {
+          0% {
+            box-shadow: 0 0 0 0 rgba(11, 76, 132, 0.2);
+          }
+
+          100% {
+            box-shadow: 0 0 0 15px rgba(11, 76, 132, 0.25);
+          }
+        }
+      }
+    }
+  }
+}
+
+.scrolled {
+  transition: 0.5s;
+  background-color: $bg-white;
+  box-shadow: 0 0 10px gray;
+
+  .container-div {
+    nav {
+      ul {
+        li {
+          a {
+            color: $text-dark-blue;
+          }
+        }
+      }
+    }
+
+    .header-right {
+      .lang {
+        i {
+          color: $text-dark-blue;
+        }
+      }
+
+      a {
+        color: $text-dark-blue;
+      }
+
+
+    }
+  }
+
+}
+
+
+.price-quote {
+    @include flexCenter;
+    flex-direction: column;
+    padding: 50px 0px;
+    background-color: $secondary-color;
+
+    .write {
+        width: 85%;
+        @include flexCenter;
+        flex-direction: column;
+        gap: 15px;
+
+
+        h5 {
+            font-size: 32px;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            color: white;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        p {
+            color: $text-white;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .price-btnModal {
+            padding: 10px 15px;
+            font-size: 18px;
+            border: none;
+            transition: .4s;
+            font-weight: 600;
+            background-color: $bg-white;
+            color: $text-dark;
+
+            &:hover {
+                background-color: black;
+                color: $text-white;
+            }
+        }
+
+        .modal {
+            .modal-dialog {
+                .modal-content {
+                    .modal-header {
+                        padding: 20px 50px
+                    }
+
+                    .modal-body {
+                        @include flexCenter;
+
+                        form {
+                            width: 97%;
+                            @include flexColumn;
+                            gap: 10px;
+                            padding: 15px 50px;
+
+                            input {
+                                width: 100%;
+                                border: 2px solid #e6ecf2;
+                                padding: 6px 15px;
+                                border-radius: 4px;
+                                font-size: 16px;
+                                outline: none;
+                                transition: all .3s ease;
+
+                                &::placeholder {
+                                    color: $text-gray;
+                                }
+                            }
+
+                            textarea {
+                                width: 100%;
+                                min-height: 140px;
+                                border: 2px solid #e6ecf2;
+                                padding: 6px 15px;
+                                border-radius: 4px;
+                                font-size: 16px;
+                                outline: none;
+                                transition: all .3s ease;
+
+                                &::placeholder {
+                                    color: $text-gray;
+                                }
+
+                            }
+
+                            .send-btn {
+                                width: 100%;
+                                background-color: $primary-color;
+                                color: $text-white;
+                                line-height: 50px;
+                                transition: 0.3s ease-in-out;
+                                padding: 0 26px;
+                                border-radius: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

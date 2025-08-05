@@ -1,0 +1,113 @@
+#one {
+    width: 100%;
+    min-height: 57vh;
+    position: relative;
+    background-image: url('https://azeturizm.az/img/background.jpeg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: .3;
+        background: #0b4c84;
+    }
+
+    .container-div {
+        @include flexCenter;
+
+        .content {
+            width: 100%;
+            height: 56vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: start;
+            z-index: 3;
+            padding: 40px 0px;
+
+            .content-info {
+                padding: 25px 0px;
+
+                h1 {
+                    font-size: 2.5rem;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    color: $text-white;
+                }
+            }
+
+            .content-location {
+                width: 100%;
+                display: flex;
+                border-top: 1px solid $text-white-opacity;
+                padding-top: 25px;
+
+                .back {
+                    @include flexCenter;
+                    font-size: 16px;
+                    padding-right: 30px;
+
+
+
+                    .arrow {
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        border-radius: 100%;
+                        border: 1px solid rgba(255, 255, 255, 0.6);
+                        margin-right: 18px;
+                        transition: 0.3s;
+
+                        i {
+                            font-size: 20px;
+                            color: $text-white;
+                            opacity: 0.6;
+
+                        }
+                    }
+
+                    span {
+                        color: $text-white;
+                        opacity: 0.5;
+                    }
+
+                    &:hover {
+                        .arrow {
+                            transform: translateX(-10px);
+                        }
+
+                    }
+
+
+                }
+
+                .locatian-addres {
+                    @include flexCenter;
+                    font-size: 14px;
+                    border-left: 1px solid $text-white-opacity;
+                    padding: 25px 30px;
+
+                    .home-page {
+                        color: $text-white-opacity;
+                    }
+
+                    .current-page {
+                        color: $text-white;
+                    }
+                }
+
+
+            }
+
+
+        }
+
+    }
+}

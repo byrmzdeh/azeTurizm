@@ -1,0 +1,106 @@
+.services {
+    width: 100%;
+    min-height: 50vh;
+    @include flexCenter;
+
+    .container-div {
+        @include gridFive;
+        gap: 30px;
+        padding: 50px 0px;
+
+        .s-box {
+            position: relative;
+            width: 100%;
+            height: 150px;
+            transition: all .2s linear;
+            overflow: hidden;
+            border-radius: 15px;
+            @include flexCenter;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: 150px;
+            }
+
+            .info-box {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 3;
+                background-color: $bg-white;
+                @include flexCenter;
+                flex-direction: column;
+                gap: 5px;
+
+                i {
+                    font-size: 20px;
+                    color: $text-dark;
+                }
+
+                h2 {
+                    font-size: 16px;
+                    font-weight: dark;
+                    color: $text-dark;
+                }
+            }
+
+            &:hover {
+                transform: translateY(-12px);
+
+                .info-box {
+                    background-color: #00000091;
+
+                    i {
+                        color: $text-white;
+                    }
+
+                    h2 {
+                        color: $text-white;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+@media (min-width:324px) and (max-width:675px) {
+    .services {
+        width: 100%;
+        @include flexCenter;
+
+        .container-div {
+            @include gridOne;
+            gap: 25px;
+        }
+    }
+
+
+}
+
+@media (min-width:676px) and (max-width:992px) {
+    .services {
+        width: 100%;
+        @include flexCenter;
+
+        .container-div {
+            @include gridTwo;
+        }
+    }
+}
+
+
+@media (min-width:992px) and (max-width:1200px) {
+    .services {
+        width: 100%;
+        @include flexCenter;
+
+        .container-div {
+            @include gridThree;
+        }
+    }
+}

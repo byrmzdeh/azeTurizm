@@ -1,0 +1,41 @@
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin gridOne {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@mixin gridTwo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@mixin gridThree {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@mixin gridFour {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@mixin gridFive {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
