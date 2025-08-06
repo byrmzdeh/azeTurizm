@@ -1191,11 +1191,13 @@ footer .container-div .end a i {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.blog-cards {
+  margin: 80px auto;
+}
 .blog-cards .container-div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
-  margin: 80px 0px;
 }
 .blog-cards .container-div .blog-card {
   width: 100%;
@@ -1242,9 +1244,9 @@ footer .container-div .end a i {
 
 .blog-detail {
   width: 100%;
+  margin: 80px 0px;
 }
 .blog-detail .container-div {
-  margin: 80px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
