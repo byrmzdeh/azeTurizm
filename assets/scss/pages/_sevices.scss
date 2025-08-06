@@ -5,8 +5,8 @@
 
     .container-div {
         @include gridFive;
+        margin: 80px auto;
         gap: 30px;
-        padding: 50px 0px;
 
         .s-box {
             position: relative;
@@ -68,7 +68,7 @@
 
 
 
-@media (min-width:324px) and (max-width:675px) {
+@media (min-width:324px) and (max-width:676px) {
     .services {
         width: 100%;
         @include flexCenter;

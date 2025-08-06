@@ -1,0 +1,208 @@
+.internalDetail {
+    .container-div {
+        margin: 80px auto;
+        @include flexColumn;
+
+        .detail {
+            width: 100%;
+            display: flex;
+            gap: 30px;
+
+            .imgs-swiper {
+                width: 50%;
+
+
+                .mySwiper {
+                    width: 60%;
+                    margin-top: 10px;
+
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            width: 100% auto !important;
+                            gap: 0px;
+                            margin: 0px;
+
+                            img {
+                                padding: 2px;
+                                min-width: 60px;
+                                width: 100%;
+                                height: 60px;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+
+                    .swiper-button-nextt {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+
+                .mySwiper2 {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            img {
+                                width: 100%;
+                                max-height: 450px;
+                                height: 100%;
+                            }
+                        }
+                    }
+
+                    .swiper-button-prev {
+                        font-size: 30px;
+                        opacity: 0;
+                        transition: 0.5s;
+                        transform: translateX(-20px);
+
+                        &::after {
+                            display: none;
+                        }
+                    }
+
+                    .swiper-button-next {
+                        font-size: 30px;
+                        opacity: 0;
+                        transition: 0.5s;
+                        transform: translateX(20px);
+
+                        &::after {
+                            display: none;
+                        }
+                    }
+
+                    &:hover {
+                        .swiper-button-prev {
+                            opacity: 1;
+                            transform: translateX(10px);
+                        }
+
+                        .swiper-button-next {
+                            opacity: 1;
+                            transform: translateX(-10px);
+                        }
+
+                    }
+                }
+            }
+
+
+            .info {
+                width: 50%;
+                @include flexColumn;
+                gap: 20px;
+
+                table {
+                    width: 100%;
+
+                    tr {
+                        &:nth-child(even) {
+                            background-color: $bg-white;
+                        }
+
+                        &:nth-child(odd) {
+                            background-color: #fffcef;
+                        }
+
+                        td {
+                            padding: 10px;
+                        }
+                    }
+                }
+
+                .info-details {
+                    height: 252px;
+                    overflow-y: auto;
+
+                    &::-webkit-scrollbar-button {
+                        display: none;
+                        height: 0;
+                    }
+
+                    scrollbar-width: thin;
+                }
+            }
+
+        }
+
+        .contact-info {
+            width: 100%;
+            display: flex;
+            margin-top: 60px;
+
+            a {
+                background-color: transparent;
+
+                button {
+
+                    min-width: 300px;
+                    width: 100%;
+                    height: 70px;
+                    background-color: $primary-color;
+                    border-radius: 5px;
+                    color: $text-white ;
+                    text-transform: uppercase;
+
+                    span {
+                        font-size: 15px;
+
+                    }
+
+                    i {
+                        font-size: 20px;
+                    }
+
+                }
+            }
+
+            .whatsapp {
+                width: 50%;
+                @include flexCenter;
+
+
+            }
+
+            .hotel {
+                width: 50%;
+                @include flexCenter;
+
+            }
+        }
+
+    }
+}
+
+@media (max-width:676px) {
+    .internalDetail {
+        .container-div {
+            .detail {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .imgs-swiper {
+                    width: 100%;
+                }
+
+                .info {
+                    width: 100%;
+                }
+            }
+
+            .contact-info {
+                @include flexColumn;
+                gap: 30px;
+
+                .whatsapp {
+                    width: 100%;
+                }
+
+                .hotel {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+}

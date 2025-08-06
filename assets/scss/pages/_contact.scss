@@ -2,7 +2,8 @@
     width: 100%;
 
     .container-div {
-        padding: 80px 0px;
+        margin: 80px auto;
+
 
         .information {
             @include flexBetween;
@@ -50,6 +51,7 @@
             width: 100%;
             padding: 50px 0px 0px 0px;
 
+
             h2 {
                 font-size: 2rem;
                 font-weight: 500;
@@ -60,6 +62,7 @@
                 @include flexColumn;
                 padding: 50px 25px;
                 gap: 15px;
+                background-color: $bg-light-grayy;
 
                 .inputs {
                     @include flexCenter;
@@ -85,6 +88,7 @@
                     border: none;
                     border-bottom: 2px solid $primary-color;
                     transition: 0.4s;
+                    outline: none;
 
                     &:hover {
                         box-shadow: 0 3px 10px 0 rgb(0 0 0 / 10%);

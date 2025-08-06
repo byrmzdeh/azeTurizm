@@ -23,6 +23,8 @@ footer {
                     font-size: 1rem;
                     line-height: 1.7rem;
                     color: $text-dark;
+                    font-weight: 800;
+
 
                     .media-icons {
                         @include flexBetween;
@@ -41,7 +43,7 @@ footer {
                     font-size: 1rem;
                     line-height: 1.7rem;
                     color: $text-dark;
-                    font-weight: 900;
+                    font-weight: 800;
 
                 }
 
@@ -51,6 +53,8 @@ footer {
 
                     span {
                         color: $text-dark;
+                        font-weight: 800;
+
                     }
 
                     img {
@@ -66,6 +70,7 @@ footer {
                     line-height: 1.7rem;
                     font-size: 15px;
                     text-align: justify;
+                    font-weight: 400;
                 }
             }
 

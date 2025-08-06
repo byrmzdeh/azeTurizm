@@ -7,6 +7,8 @@
 
 
 
+
+
 .price-quote {
     @include mixins.flexCenter;
     flex-direction: column;
@@ -118,7 +120,7 @@
 
 
 @media (max-width: 1200px) {
-    .container {
-        width: 97%;
+    .container-div {
+        width: 95%;
     }
 }

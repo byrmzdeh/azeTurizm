@@ -111,3 +111,43 @@
 
     }
 }
+
+
+@media (max-width:676px) {
+    #one {
+        .container-div {
+            .content {
+                .content-info {
+                    h1 {
+                        font-size: 23px;
+                    }
+                }
+
+                .content-location {
+                    padding-top: 15px;
+
+                    .back {
+                        font-size: 14px;
+
+                        .arrow {
+                            width: 30px;
+                            height: 30px;
+                            @include flexCenter;
+
+                            i {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+
+                    .locatian-addres {
+                        padding: 15px 15px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                    }
+                }
+            }
+        }
+    }
+}

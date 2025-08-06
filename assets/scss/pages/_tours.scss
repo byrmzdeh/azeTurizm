@@ -1,0 +1,189 @@
+.foreign-cards {
+    .container-div {
+        margin: 80px auto;
+        @include gridFour;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 30px;
+
+        .f-card {
+            img {
+                width: 100%;
+                aspect-ratio: 16 / 9;
+                transition: 0.4s;
+                border: 2px solid #383838;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.03);
+                    border-radius: 20px;
+                }
+            }
+
+            h6 {
+                margin-top: 10px;
+            }
+        }
+
+    }
+}
+
+
+.internal-cards {
+
+    .container-div {
+        margin: 80px auto;
+        @include gridFour;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        .i-card {
+            min-width: 200px;
+            width: 100%;
+            min-height: 240px;
+            border-radius: 25px;
+            transition: 0.4s;
+
+            .internalSwiper {
+                .internalSwiper {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+                    background: #444;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 15px;
+                }
+
+                .swiper-slide img {
+                    display: block;
+                    width: 100%;
+                    height: 240px;
+                    object-fit: cover;
+                    border-radius: 15px
+                }
+
+                .swiper-button-next,
+                .swiper-button-prev {
+
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    font-size: 7px !important;
+                    color: black !important;
+                    background-color: white;
+                    font-weight: bolder;
+                    display: none;
+                    --swiper-navigation-size: 14px;
+
+                }
+            }
+
+            .cardInfo {
+                @include flexColumn;
+                margin-top: 5px;
+
+                .type {
+                    @include flexBetween;
+
+                    .new {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 3px;
+                        margin-bottom: 0px;
+
+                        h6 {
+                            margin-bottom: 0px;
+                        }
+
+                        i {
+                            font-size: 15px;
+                            color: black;
+                        }
+                    }
+                }
+
+                .price {
+                    margin-top: 5px;
+
+                }
+            }
+
+            &:hover {
+                transform: scale(1.02);
+
+                .swiper-button-next,
+                .swiper-button-prev {
+                    @include flexCenter;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+@media (max-width:676px) {
+
+    .foreign-cards {
+        .container-div {
+            @include flexColumn;
+
+        }
+    }
+
+    .internal-cards {
+        .container-div {
+            max-width: 300px;
+            @include flexColumn;
+            gap: 20px;
+
+        }
+    }
+
+}
+
+
+@media (min-width:676px) and (max-width:992px) {
+    .foreign-cards {
+        .container-div {
+            @include gridTwo;
+
+        }
+    }
+
+    .internal-cards {
+        .container-div {
+            @include gridTwo;
+
+        }
+    }
+}
+
+
+@media (min-width:992px) and (max-width:1200px) {
+    .foreign-cards {
+        .container-div {
+            @include gridThree;
+
+        }
+    }
+
+    .internal-cards {
+        .container-div {
+            @include gridThree;
+
+        }
+    }
+}

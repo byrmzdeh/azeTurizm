@@ -4,8 +4,9 @@
     .container-div {
         @include flexBetween;
         flex-direction: column;
-        padding: 80px 0px;
         gap: 80px;
+        margin: 80px auto;
+
 
         .texts {
             @include flexBetween;

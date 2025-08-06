@@ -1,8 +1,8 @@
 .partners {
     width: 100%;
-    margin: 50px auto;
 
     .container-div {
+        margin: 80px auto;
         @include gridFour;
         height: 100%;
         gap: 30px;
