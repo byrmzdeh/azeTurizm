@@ -321,10 +321,9 @@ header #res-menu {
   width: 100%;
   height: 100vh;
   background-color: #0b4c84;
-  display: flex;
-  flex-direction: column;
   display: none;
   position: absolute;
+  text-align: center;
   top: 0px;
   left: 0px;
   padding: 40px;
@@ -352,14 +351,14 @@ header #res-menu #close i {
 }
 header #res-menu ul {
   text-align: center;
-  line-height: 2rem;
+  line-height: 2.2rem;
 }
 header #res-menu ul li .toggle-icon {
   transition: 0.5s;
 }
 header #res-menu ul li a {
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bolder;
 }
 header #res-menu ul .dropdown-item a {
@@ -375,6 +374,20 @@ header #res-menu ul #submenu {
 }
 header #res-menu ul .open {
   max-height: 500px;
+}
+header #res-menu #res-btn {
+  display: inline-block;
+  margin: auto;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  background-color: white;
+  color: #0b4c84;
+  padding: 9px 34px;
+  border-radius: 30px;
+  font-weight: bolder;
+}
+header #res-menu #res-btn:hover {
+  transform: scale(0.98);
 }
 
 .scrolled {
@@ -1010,7 +1023,7 @@ footer .container-div .end a i {
   color: white;
 }
 
-@media (min-width: 324px) and (max-width: 676px) {
+@media (max-width: 676px) {
   .services {
     width: 100%;
     display: flex;
@@ -1018,9 +1031,14 @@ footer .container-div .end a i {
     justify-content: center;
   }
   .services .container-div {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 25px;
+  }
+  .services .container-div .s-box {
+    width: 90%;
   }
 }
 @media (min-width: 676px) and (max-width: 992px) {
@@ -1309,6 +1327,9 @@ footer .container-div .end a i {
   justify-content: space-evenly;
   gap: 30px;
 }
+.foreign-cards .container-div .f-card {
+  width: 100%;
+}
 .foreign-cards .container-div .f-card img {
   width: 100%;
   aspect-ratio: 16/9;
@@ -1413,11 +1434,16 @@ footer .container-div .end a i {
     display: flex;
     flex-direction: column;
   }
+  .foreign-cards .container-div .f-card {
+    width: 80%;
+  }
   .internal-cards .container-div {
-    max-width: 300px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+  .internal-cards .container-div .i-card {
+    width: 80%;
   }
 }
 @media (min-width: 676px) and (max-width: 992px) {
@@ -1439,4 +1465,88 @@ footer .container-div .end a i {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+}
+.foreignCountry-cards .container-div {
+  margin: 80px auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 300px;
+  width: 100%;
+}
+.foreignCountry-cards .container-div .f-card {
+  width: 100%;
+  min-height: 240px;
+  border-radius: 25px;
+  transition: 0.4s;
+}
+.foreignCountry-cards .container-div .f-card .internalSwiper .internalSwiper {
+  width: 100%;
+  height: 100%;
+}
+.foreignCountry-cards .container-div .f-card .internalSwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.foreignCountry-cards .container-div .f-card .internalSwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.foreignCountry-cards .container-div .f-card .internalSwiper .swiper-button-next,
+.foreignCountry-cards .container-div .f-card .internalSwiper .swiper-button-prev {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 7px !important;
+  color: black !important;
+  background-color: white;
+  font-weight: bolder;
+  display: none;
+  --swiper-navigation-size: 14px;
+}
+.foreignCountry-cards .container-div .f-card .cardInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+.foreignCountry-cards .container-div .f-card .cardInfo .type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.foreignCountry-cards .container-div .f-card .cardInfo .type .new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  margin-bottom: 0px;
+}
+.foreignCountry-cards .container-div .f-card .cardInfo .type .new h6 {
+  margin-bottom: 0px;
+}
+.foreignCountry-cards .container-div .f-card .cardInfo .type .new i {
+  font-size: 15px;
+  color: black;
+}
+.foreignCountry-cards .container-div .f-card .cardInfo .price {
+  margin-top: 5px;
+}
+.foreignCountry-cards .container-div .f-card:hover {
+  transform: scale(1.02);
+}
+.foreignCountry-cards .container-div .f-card:hover .swiper-button-next,
+.foreignCountry-cards .container-div .f-card:hover .swiper-button-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

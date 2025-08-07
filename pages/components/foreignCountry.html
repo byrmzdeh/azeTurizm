@@ -13,17 +13,15 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="/assets/scss/css/main.css">
-    <script type="module" src="/js/main.js"></script>
+
 
 </head>
 
 <body>
-    <header id="header">
+   <header id="header">
         <div class="container-div">
             <div class="menu">
                 <div class="header-left">
@@ -164,7 +162,7 @@
         <div class="container-div">
             <div class="content">
                 <div class="content-info">
-                    <h1>Xarici Turlar</h1>
+                    <h1>Avropa turları</h1>
                 </div>
                 <div class="content-location">
                     <a href="/" class="back">
@@ -175,7 +173,8 @@
                     </a>
                     <div class="locatian-addres">
                         <a href="/" class="home-page">Ana Səhifə </a>
-                        <a href="/pages/foreignTours.html" class="current-page"> / Xarici Turlar</a>
+                        <a href="/pages/foreignTours.html" class="home-page">/ Xarici Turlar </a>
+                        <a href="/pages/foreignCountry.html" class="current-page"> / Avropa turları</a>
                     </div>
                 </div>
 
@@ -185,34 +184,60 @@
     </section>
 
 
-    <section class="foreign-cards">
+    <section class="foreignCountry-cards">
         <div class="container-div">
-            <a href='/pages/components/foreignCountry.html' class="f-card">
-                <img src="https://azeturizm.az/img/avropa-cateogry.jpg" alt="err">
-                <h6>Avropa turları</h6>
-            </a>
+            <div class="f-card">
+                <div class="swiper internalSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://azeturizm.az/uploads/posts/2023-09/medium/1694900945_naxcivan-eshabi-kehf.jpg"
+                                alt="err">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://azeturizm.az/uploads/posts/2023-09/medium/1694900949_42246_6022361091177.jpg"
+                                alt="err">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://azeturizm.az/uploads/posts/2023-09/medium/1694900941_naxcivann.jpg"
+                                alt="err">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://azeturizm.az/uploads/posts/2023-09/medium/1694900912_img_8800-1.jpg"
+                                alt="err">
+                        </div>
 
-            <a href='/pages/components/foreignCountry.html' class="f-card">
-                <img src="https://azeturizm.az/img/amerika-category.jpg" alt="err">
-                <h6>Amerika turları</h6>
-            </a>
+                        <div class="swiper-slide">
+                            <img src="https://azeturizm.az/uploads/posts/2023-09/medium/1694900945_naxcivan-eshabi-kehf.jpg"
+                                alt="err">
+                        </div>
 
-            <a href='/pages/components/foreignCountry.html' class="f-card">
-                <img src="https://azeturizm.az/img/asiya-category.jpg" alt="err">
-                <h6>Asiya turları</h6>
-            </a>
+                        <div class="swiper-slide">
+                            <img src="https://azeturizm.az/uploads/posts/2023-09/medium/1694900957_naxcivan-ilandag.jpg"
+                                alt="err">
+                        </div>
 
-            <a href='/pages/components/foreignCountry.html' class="f-card">
-                <img src="https://azeturizm.az/img/rusiya-category.jpg" alt="err">
-                <h6>Rusiya turları</h6>
-            </a>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
 
-            <a href='/pages/components/foreignCountry.html' class="f-card">
-                <img src="https://azeturizm.az/img/turkiye-category.jpg" alt="err">
-                <h6>Türkiyə turları</h6>
-            </a>
+                <a href="/pages/components/internalGroupDetail.html" class="cardInfo">
+                    <div class="type">
+                        <h6><b>Naxçıvan turu</b></h6>
+                        <div class="new">
+                            <i class="fa-solid fa-star"></i>
+                            <h6><b>Yeni</b></h6>
+                        </div>
+                    </div>
 
-
+                    <div class="history">
+                        <b>2 gün / 1 gecə</b>
+                    </div>
+                    <div class="price">
+                        <b>179 AZN</b>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -227,7 +252,6 @@
             </button>
         </div>
     </section>
-
 
     <footer>
         <div class="container-div">
@@ -278,7 +302,11 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/js/main.js"></script>
 </body>
 
 </html>

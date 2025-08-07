@@ -68,14 +68,19 @@
 
 
 
-@media (min-width:324px) and (max-width:676px) {
+@media (max-width:676px) {
     .services {
         width: 100%;
         @include flexCenter;
 
         .container-div {
-            @include gridOne;
+            @include flexColumn;
+            align-items: center;
+            justify-content: center;
             gap: 25px;
+            .s-box{
+                width: 90%;
+            }
         }
     }
 

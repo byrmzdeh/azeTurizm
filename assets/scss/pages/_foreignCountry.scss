@@ -1,47 +1,16 @@
-.foreign-cards {
-    .container-div {
-        margin: 80px auto;
-        @include gridFour;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: 30px;
-
-        .f-card {
-            width: 100%;
-
-            img {
-                width: 100%;
-                aspect-ratio: 16 / 9;
-                transition: 0.4s;
-                border: 2px solid #383838;
-                cursor: pointer;
-
-                &:hover {
-                    transform: scale(1.03);
-                    border-radius: 20px;
-                }
-            }
-
-            h6 {
-                margin-top: 10px;
-            }
-        }
-
-    }
-}
-
-
-.internal-cards {
+.foreignCountry-cards {
 
     .container-div {
         margin: 80px auto;
-        @include gridFour;
+        display: grid;
         align-items: center;
         justify-content: center;
         gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        max-width: 300px;
+        width: 100%;
 
-        .i-card {
-            min-width: 200px;
+        .f-card {
             width: 100%;
             min-height: 240px;
             border-radius: 25px;
@@ -126,74 +95,6 @@
                     @include flexCenter;
                 }
             }
-
-        }
-    }
-}
-
-
-
-
-
-
-@media (max-width:676px) {
-
-    .foreign-cards {
-        .container-div {
-            @include flexColumn;
-
-            .f-card {
-                width: 80%;
-
-            }
-
-        }
-    }
-
-    .internal-cards {
-        .container-div {
-            @include flexColumn;
-            gap: 20px;
-
-            .i-card {
-                width: 80%;
-            }
-
-
-        }
-    }
-
-}
-
-
-@media (min-width:676px) and (max-width:992px) {
-    .foreign-cards {
-        .container-div {
-            @include gridTwo;
-
-        }
-    }
-
-    .internal-cards {
-        .container-div {
-            @include gridTwo;
-
-        }
-    }
-}
-
-
-@media (min-width:992px) and (max-width:1200px) {
-    .foreign-cards {
-        .container-div {
-            @include gridThree;
-
-        }
-    }
-
-    .internal-cards {
-        .container-div {
-            @include gridThree;
 
         }
     }
