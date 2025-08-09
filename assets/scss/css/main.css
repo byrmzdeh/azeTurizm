@@ -158,7 +158,7 @@ header {
   min-height: 103px;
   background-color: transparent;
   position: fixed;
-  z-index: 5;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -805,6 +805,474 @@ footer .container-div .end a i {
   color: white;
 }
 
+.blog-home {
+  background-color: rgba(155, 193, 238, 0.2);
+  padding: 10px 0px;
+}
+
+.sliderPartners .autoSwiper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 60px 0px;
+}
+.sliderPartners .autoSwiper h4 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+.sliderPartners .autoSwiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  width: 100%;
+  transition: 0.4s;
+}
+.sliderPartners .autoSwiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  aspect-ratio: 16/9;
+  filter: grayscale(100%);
+}
+.sliderPartners .autoSwiper .swiper-slide:hover img {
+  filter: grayscale(0);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.06);
+}
+
+.home-services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0px;
+  gap: 50px;
+  background-color: rgba(183, 183, 183, 0.2);
+}
+.home-services h4 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+.home-services .container-div {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+.home-services .container-div .s-box {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  transition: all 0.2s linear;
+  overflow: hidden;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.home-services .container-div .s-box img {
+  width: 100%;
+  height: 150px;
+}
+.home-services .container-div .s-box .info-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.home-services .container-div .s-box .info-box i {
+  font-size: 20px;
+  color: #1d1d26;
+}
+.home-services .container-div .s-box .info-box h2 {
+  font-size: 16px;
+  font-weight: dark;
+  color: #1d1d26;
+}
+.home-services .container-div .s-box:hover {
+  transform: translateY(-12px);
+}
+.home-services .container-div .s-box:hover .info-box {
+  background-color: rgba(0, 0, 0, 0.568627451);
+}
+.home-services .container-div .s-box:hover .info-box i {
+  color: white;
+}
+.home-services .container-div .s-box:hover .info-box h2 {
+  color: white;
+}
+
+.home-tours {
+  width: 100%;
+  padding: 50px 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("https://azeturizm.az/img/bg-background.jpeg.jpg") center/cover;
+}
+.home-tours .container-div {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.home-tours .container-div .home-foreign-tours {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.home-tours .container-div .home-foreign-tours .tour-write {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-tours .container-div .home-foreign-tours .tour-write h5 {
+  color: #1d1d26;
+  font-weight: bold;
+  font-size: 30px;
+}
+.home-tours .container-div .home-foreign-tours .tour-write a {
+  color: #0b4c84;
+  font-size: 18px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.home-tours .container-div .home-foreign-tours .internal-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.home-tours .container-div .home-foreign-tours .internal-cards .i-card {
+  min-width: 200px;
+  width: 100%;
+  min-height: 240px;
+  border-radius: 25px;
+  transition: 0.4s;
+}
+.home-tours .container-div .home-foreign-tours .internal-cards .i-card .internalSwiper .internalSwiper {
+  width: 100%;
+  height: 100%;
+}
+.home-tours .container-div .home-foreign-tours .internal-cards .i-card .internalSwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.home-tours .container-div .home-foreign-tours .internal-cards .i-card .internalSwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.home-tours .container-div .home-foreign-tours .internal-cards .i-card .internalSwiper .swiper-button-next,
+.home-tours .container-div .home-foreign-tours .internal-cards .i-card .internalSwiper .swiper-button-prev {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 7px !important;
+  color: black !important;
+  background-color: white;
+  font-weight: bolder;
+  display: none;
+  --swiper-navigation-size: 14px;
+}
+.home-tours .container-div .home-foreign-tours .internal-cards .i-card .cardInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+.home-tours .container-div .home-foreign-tours .internal-cards .i-card .cardInfo .type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-tours .container-div .home-foreign-tours .internal-cards .i-card .cardInfo .type .new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  margin-bottom: 0px;
+}
+.home-tours .container-div .home-foreign-tours .internal-cards .i-card .cardInfo .type .new h6 {
+  margin-bottom: 0px;
+}
+.home-tours .container-div .home-foreign-tours .internal-cards .i-card .cardInfo .type .new i {
+  font-size: 15px;
+  color: black;
+}
+.home-tours .container-div .home-foreign-tours .internal-cards .i-card .cardInfo .price {
+  margin-top: 5px;
+}
+.home-tours .container-div .home-foreign-tours .internal-cards .i-card:hover {
+  transform: scale(1.02);
+}
+.home-tours .container-div .home-foreign-tours .internal-cards .i-card:hover .swiper-button-next,
+.home-tours .container-div .home-foreign-tours .internal-cards .i-card:hover .swiper-button-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.walk-places {
+  margin: 80px auto;
+  height: auto;
+}
+.walk-places .container-div {
+  display: flex;
+  gap: 30px;
+  height: auto;
+}
+.walk-places .container-div .place-cards {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+.walk-places .container-div .place-cards .big-card {
+  width: 35%;
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  align-self: stretch;
+}
+.walk-places .container-div .place-cards .big-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+  opacity: 0.9;
+  display: block;
+}
+.walk-places .container-div .place-cards .big-card .place-info {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  flex-direction: column;
+}
+.walk-places .container-div .place-cards .big-card .place-info h2 {
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.7s;
+}
+.walk-places .container-div .place-cards .big-card .place-info p {
+  font-size: 13px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.walk-places .container-div .place-cards .big-card:hover .place-info {
+  background-color: transparent;
+}
+.walk-places .container-div .place-cards .big-card:hover .place-info h2 {
+  transform: translateY(-12px);
+}
+.walk-places .container-div .place-cards .big-card:hover .place-info p {
+  transform: translateY(-7px);
+}
+.walk-places .container-div .place-cards .small-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 65%;
+  height: 100%;
+}
+.walk-places .container-div .place-cards .small-cards .place-card {
+  width: calc((100% - 40px) / 3);
+  height: calc((100% - 40px) / 3);
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: 0.6s;
+}
+.walk-places .container-div .place-cards .small-cards .place-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+.walk-places .container-div .place-cards .small-cards .place-card .place-info {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  flex-direction: column;
+}
+.walk-places .container-div .place-cards .small-cards .place-card .place-info h2 {
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.7s;
+}
+.walk-places .container-div .place-cards .small-cards .place-card .place-info p {
+  font-size: 13px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.walk-places .container-div .place-cards .small-cards .place-card:hover .place-info {
+  background-color: transparent;
+}
+.walk-places .container-div .place-cards .small-cards .place-card:hover .place-info h2 {
+  transform: translateY(-12px);
+}
+.walk-places .container-div .place-cards .small-cards .place-card:hover .place-info p {
+  transform: translateY(-7px);
+}
+
+.discover {
+  background-color: #0b4c84;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 0px;
+}
+.discover h2 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+.discover .container-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px auto;
+  gap: 20px;
+  padding: 20px 47px;
+}
+.discover .container-div input {
+  width: 100%;
+  padding: 20px 32px;
+  outline: none;
+}
+.discover .container-div input::placeholder {
+  font-weight: bold;
+}
+.discover .container-div .select-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.discover .container-div .select-btn select {
+  width: 80%;
+  padding: 20px 32px;
+  appearance: none;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  color: #8c95a1;
+}
+.discover .container-div .select-btn button {
+  padding: 20px 32px;
+  background-color: #4272d7;
+  color: white;
+  font-weight: bold;
+}
+
+.advantages {
+  width: 82%;
+  margin: 0px auto;
+  padding: 80px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.advantages h4 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+.advantages .container-div {
+  flex: 0 0 auto;
+}
+.advantages .container-div .a-img {
+  border-radius: 20px;
+  max-width: 370px;
+  width: 100%;
+  height: 320px;
+  background-image: url("https://azeturizm.az/img/gif.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 15px;
+}
+.advantages .container-div .advantage-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.advantages .container-div .advantage-cards .advantage-left-cards {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.advantages .container-div .advantage-cards .advantage-left-cards .advantage-card {
+  padding: 0px;
+}
+.advantages .container-div .advantage-cards .advantage-left-cards .advantage-card h3 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  font-size: 24px;
+}
+.advantages .container-div .advantage-cards .advantage-left-cards .advantage-card h3 i {
+  padding-left: 5px;
+}
+.advantages .container-div .advantage-cards .advantage-left-cards .advantage-card h6 {
+  font-size: 16px;
+  color: #596573;
+}
+.advantages .container-div .advantage-cards .advantage-right-cards {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.advantages .container-div .advantage-cards .advantage-right-cards .advantage-card {
+  padding: 0px;
+}
+.advantages .container-div .advantage-cards .advantage-right-cards .advantage-card h3 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  font-size: 24px;
+}
+.advantages .container-div .advantage-cards .advantage-right-cards .advantage-card h3 i {
+  padding-left: 5px;
+}
+.advantages .container-div .advantage-cards .advantage-right-cards .advantage-card h6 {
+  font-size: 16px;
+  color: #596573;
+}
+
 @media (max-width: 676px) {
   #one .container-div .content .content-info h1 {
     font-size: 23px;
@@ -830,6 +1298,160 @@ footer .container-div .end a i {
     display: flex;
     flex-direction: column;
     align-items: start;
+  }
+  .advantages {
+    width: 70%;
+    gap: 30px;
+  }
+  .advantages .container-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .advantages .container-div .a-img {
+    position: static;
+    left: 0%;
+    transform: translateX(0%);
+    margin-bottom: 20px;
+  }
+  .advantages .container-div .advantage-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .advantages .container-div .advantage-cards h6 {
+    text-align: center;
+  }
+  .advantages .container-div .advantage-cards .advantage-left-cards,
+  .advantages .container-div .advantage-cards .advantage-right-cards {
+    width: 100%;
+  }
+  .advantages .container-div .advantage-cards .advantage-left-cards .advantage-card,
+  .advantages .container-div .advantage-cards .advantage-right-cards .advantage-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .home-services {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-services .container-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+  .home-services .container-div .s-box {
+    width: 90%;
+  }
+  .walk-places .container-div .place-cards {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .walk-places .container-div .place-cards .big-card {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  .walk-places .container-div .place-cards .small-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: auto;
+  }
+  .walk-places .container-div .place-cards .small-cards .place-card {
+    width: calc((100% - 10px) / 2);
+    height: auto;
+  }
+  .walk-places .container-div .place-cards .small-cards .place-card img {
+    height: auto;
+  }
+  .discover {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .discover .container-div {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .discover .container-div .select-btn {
+    width: 100%;
+  }
+  .discover .container-div .select-btn select {
+    width: 50%;
+  }
+  .discover .container-div .select-btn button {
+    width: 50%;
+  }
+  .home-tours .container-div .home-foreign-tours {
+    gap: 20px;
+  }
+  .home-tours .container-div .home-foreign-tours .internal-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .home-tours .container-div .home-foreign-tours .internal-cards .i-card {
+    width: 100%;
+  }
+}
+@media (min-width: 676px) and (max-width: 992px) {
+  .advantages .container-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .advantages .container-div .a-img {
+    position: static;
+    left: 0%;
+    transform: translateX(0%);
+    margin-top: 0px;
+  }
+  .advantages .container-div .advantage-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  .advantages .container-div .advantage-cards .advantage-left-cards,
+  .advantages .container-div .advantage-cards .advantage-right-cards {
+    width: 100%;
+  }
+  .home-services {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-services .container-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .home-services {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-services .container-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .about {
@@ -962,15 +1584,14 @@ footer .container-div .end a i {
 }
 .services {
   width: 100%;
-  min-height: 50vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  margin: 80px auto;
+  gap: 50px;
 }
 .services .container-div {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  margin: 80px auto;
   gap: 30px;
 }
 .services .container-div .s-box {
@@ -1211,6 +1832,14 @@ footer .container-div .end a i {
 }
 .blog-cards {
   margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.blog-cards h4 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
 }
 .blog-cards .container-div {
   display: grid;
@@ -1258,6 +1887,17 @@ footer .container-div .end a i {
 }
 .blog-cards .container-div .blog-card button a {
   font-weight: bolder;
+}
+.blog-cards .blog-kecid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0b4c84;
+  font-weight: bold;
+  font-size: 22px;
+}
+.blog-cards .blog-kecid i {
+  padding-left: 10px;
 }
 
 .blog-detail {

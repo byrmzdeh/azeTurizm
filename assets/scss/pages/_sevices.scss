@@ -1,11 +1,12 @@
 .services {
     width: 100%;
-    min-height: 50vh;
-    @include flexCenter;
+    @include flexColumn;
+    margin: 80px auto;
+    gap: 50px;
+
 
     .container-div {
         @include gridFive;
-        margin: 80px auto;
         gap: 30px;
 
         .s-box {
@@ -78,7 +79,8 @@
             align-items: center;
             justify-content: center;
             gap: 25px;
-            .s-box{
+
+            .s-box {
                 width: 90%;
             }
         }

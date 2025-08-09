@@ -3,7 +3,7 @@ header {
   min-height: 103px;
   background-color: transparent;
   position: fixed;
-  z-index: 5;
+  z-index: 10;
   @include flexCenter;
 
   .container-div {

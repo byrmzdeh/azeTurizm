@@ -113,6 +113,556 @@
 }
 
 
+.blog-home {
+    background-color: rgba(155, 193, 238, 0.2);
+    padding: 10px 0px;
+}
+
+
+.sliderPartners {
+
+    .autoSwiper {
+        @include flexColumn;
+        gap: 50px;
+        padding: 60px 0px;
+
+        h4 {
+            text-align: center;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .swiper-slide {
+            @include flexCenter;
+            max-width: 300px;
+            width: 100%;
+            transition: 0.4s;
+
+            img {
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+                aspect-ratio: 16 / 9;
+                filter: grayscale(100%);
+            }
+
+            &:hover {
+                img {
+                    filter: grayscale(0);
+                    box-shadow: 0 0 10px 0 rgb(0 0 0 / 6%);
+                }
+            }
+        }
+    }
+}
+
+
+.home-services {
+    width: 100%;
+    @include flexColumn;
+    padding: 80px 0px;
+    gap: 50px;
+    background-color: $bg-light-grayy;
+
+    h4 {
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+
+    .container-div {
+        @include gridFive;
+        gap: 30px;
+
+        .s-box {
+            position: relative;
+            width: 100%;
+            height: 150px;
+            transition: all .2s linear;
+            overflow: hidden;
+            border-radius: 15px;
+            @include flexCenter;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: 150px;
+            }
+
+            .info-box {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 3;
+                background-color: $bg-white;
+                @include flexCenter;
+                flex-direction: column;
+                gap: 5px;
+
+                i {
+                    font-size: 20px;
+                    color: $text-dark;
+                }
+
+                h2 {
+                    font-size: 16px;
+                    font-weight: dark;
+                    color: $text-dark;
+                }
+            }
+
+            &:hover {
+                transform: translateY(-12px);
+
+                .info-box {
+                    background-color: #00000091;
+
+                    i {
+                        color: $text-white;
+                    }
+
+                    h2 {
+                        color: $text-white;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+.home-tours {
+    width: 100%;
+    padding: 50px 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('https://azeturizm.az/img/bg-background.jpeg.jpg') center / cover;
+
+
+    .container-div {
+        @include flexColumn;
+        gap: 60px;
+
+        .home-foreign-tours {
+            @include flexColumn;
+            gap: 30px;
+
+            .tour-write {
+                @include flexBetween;
+
+                h5 {
+                    color: $text-dark;
+                    font-weight: bold;
+                    font-size: 30px;
+                }
+
+                a {
+                    color: $primary-color;
+                    font-size: 18px;
+                    text-decoration: underline;
+                    font-weight: bold
+                }
+            }
+
+            .internal-cards {
+                @include gridFour;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+
+                .i-card {
+                    min-width: 200px;
+                    width: 100%;
+                    min-height: 240px;
+                    border-radius: 25px;
+                    transition: 0.4s;
+
+                    .internalSwiper {
+                        .internalSwiper {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .swiper-slide {
+                            text-align: center;
+                            font-size: 18px;
+                            background: #444;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 15px;
+                        }
+
+                        .swiper-slide img {
+                            display: block;
+                            width: 100%;
+                            height: 240px;
+                            object-fit: cover;
+                            border-radius: 15px
+                        }
+
+                        .swiper-button-next,
+                        .swiper-button-prev {
+
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                            font-size: 7px !important;
+                            color: black !important;
+                            background-color: white;
+                            font-weight: bolder;
+                            display: none;
+                            --swiper-navigation-size: 14px;
+
+                        }
+                    }
+
+                    .cardInfo {
+                        @include flexColumn;
+                        margin-top: 5px;
+
+                        .type {
+                            @include flexBetween;
+
+                            .new {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 3px;
+                                margin-bottom: 0px;
+
+                                h6 {
+                                    margin-bottom: 0px;
+                                }
+
+                                i {
+                                    font-size: 15px;
+                                    color: black;
+                                }
+                            }
+                        }
+
+                        .price {
+                            margin-top: 5px;
+
+                        }
+                    }
+
+                    &:hover {
+                        transform: scale(1.02);
+
+                        .swiper-button-next,
+                        .swiper-button-prev {
+                            @include flexCenter;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.walk-places {
+    margin: 80px auto;
+    height: auto;
+
+    .container-div {
+        display: flex;
+        gap: 30px;
+        height: auto;
+
+        .place-cards {
+            display: flex;
+            width: 100%;
+            gap: 20px;
+
+            .big-card {
+                width: 35%;
+                position: relative;
+                border-radius: 24px;
+                overflow: hidden;
+                align-self: stretch;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 24px;
+                    opacity: 0.9;
+                    display: block;
+                }
+
+                .place-info {
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    position: absolute;
+                    bottom: 0px;
+                    right: 0px;
+                    color: white;
+                    padding: 10px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: end;
+                    flex-direction: column;
+
+
+                    h2 {
+                        font-size: 20px;
+                        font-weight: bold;
+                        transition: 0.7s;
+                    }
+
+                    p {
+                        font-size: 13px;
+                        font-weight: bold;
+                        transition: 0.5s;
+                    }
+                }
+
+                &:hover {
+                    .place-info {
+                        background-color: transparent;
+
+                        h2 {
+                            transform: translateY(-12px);
+                        }
+
+                        p {
+                            transform: translateY(-7px);
+                        }
+                    }
+                }
+            }
+
+            .small-cards {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                width: 65%;
+                height: 100%;
+
+                .place-card {
+                    width: calc((100% - 40px) / 3); // 3 sütun → 2 boşluq = 40px
+                    height: calc((100% - 40px) / 3); // 3 sətir → 2 boşluq = 40px
+                    position: relative;
+                    border-radius: 24px;
+                    overflow: hidden;
+                    transition: 0.6s;
+
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 24px;
+                    }
+
+                    .place-info {
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.4);
+                        position: absolute;
+                        bottom: 0px;
+                        right: 0px;
+                        color: white;
+                        padding: 10px;
+                        display: flex;
+                        align-items: start;
+                        justify-content: end;
+                        flex-direction: column;
+
+
+                        h2 {
+                            font-size: 20px;
+                            font-weight: bold;
+                            transition: 0.7s;
+                        }
+
+                        p {
+                            font-size: 13px;
+                            font-weight: bold;
+                            transition: 0.5s;
+                        }
+                    }
+
+                    &:hover {
+                        .place-info {
+                            background-color: transparent;
+
+                            h2 {
+                                transform: translateY(-12px);
+                            }
+
+                            p {
+                                transform: translateY(-7px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.discover {
+    background-color: $primary-color;
+    @include flexColumn;
+    gap: 50px;
+    padding: 80px 0px;
+
+    h2 {
+        text-align: center;
+        color: $text-white;
+        font-weight: bold
+    }
+
+    .container-div {
+        @include flexBetween;
+        padding: 100px auto;
+        gap: 20px;
+        padding: 20px 47px;
+
+        input {
+            width: 100%;
+            padding: 20px 32px;
+            outline: none;
+
+            &::placeholder {
+                font-weight: bold;
+            }
+        }
+
+        .select-btn {
+            width: 100%;
+            @include flexBetween;
+            gap: 20px;
+
+
+            select {
+                width: 80%;
+                padding: 20px 32px;
+                appearance: none;
+                outline: none;
+                border: none;
+                font-weight: bold;
+                color: $text-gray;
+
+            }
+
+            button {
+                // max-width: 200px;
+                padding: 20px 32px;
+                background-color: $bg-blue;
+                color: $text-white;
+                font-weight: bold;
+
+            }
+        }
+    }
+}
+
+
+
+.advantages {
+    width: 82%;
+    margin: 0px auto;
+    padding: 80px 0px;
+    @include flexColumn;
+    gap: 50px;
+
+
+    h4 {
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .container-div {
+        flex: 0 0 auto;
+
+        .a-img {
+            border-radius: 20px;
+            max-width: 370px;
+            width: 100%;
+            height: 320px;
+            background-image: url('https://azeturizm.az/img/gif.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 15px
+        }
+
+        .advantage-cards {
+            @include flexBetween;
+
+            .advantage-left-cards {
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                .advantage-card {
+                    padding: 0px;
+
+                    h3 {
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+                        gap: 10px;
+                        font-size: 24px;
+
+
+                        i {
+                            padding-left: 5px;
+                        }
+                    }
+
+                    h6 {
+                        font-size: 16px;
+                        color: $text-mid-gray;
+                    }
+                }
+
+            }
+
+            .advantage-right-cards {
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .advantage-card {
+                    padding: 0px;
+
+                    h3 {
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+                        gap: 10px;
+                        font-size: 24px;
+
+
+                        i {
+                            padding-left: 5px;
+                        }
+                    }
+
+                    h6 {
+                        font-size: 16px;
+                        color: $text-mid-gray;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
 @media (max-width:676px) {
     #one {
         .container-div {
@@ -148,6 +698,186 @@
                     }
                 }
             }
+        }
+    }
+
+    .advantages {
+        width: 70%;
+        gap: 30px;
+
+        .container-div {
+            @include flexCenter;
+            flex-direction: column;
+
+            .a-img {
+                position: static;
+                left: 0%;
+                transform: translateX(-00%);
+                margin-bottom: 20px;
+            }
+
+            .advantage-cards {
+                @include flexCenter;
+                flex-direction: column;
+                gap: 40px;
+
+                h6 {
+                    text-align: center;
+                }
+
+                .advantage-left-cards,
+                .advantage-right-cards {
+                    width: 100%;
+
+                    .advantage-card {
+                        @include flexCenter;
+                        flex-direction: column;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .home-services {
+        width: 100%;
+        @include flexCenter;
+
+        .container-div {
+            @include flexColumn;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+
+            .s-box {
+                width: 90%;
+            }
+        }
+    }
+
+    .walk-places {
+        .container-div {
+            .place-cards {
+                @include flexColumn;
+                height: auto;
+
+                .big-card {
+                    width: 100%;
+                    height: auto;
+                    display: none;
+                }
+
+                .small-cards {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    height: auto;
+
+                    .place-card {
+                        width: calc((100% - 10px)/2);
+                        height: auto;
+
+                        img {
+                            height: auto;
+                        }
+
+
+
+
+                    }
+                }
+            }
+        }
+    }
+
+    .discover {
+        @include flexColumn;
+        gap: 30px;
+
+        .container-div {
+            @include flexColumn;
+            padding: 0px;
+
+            .select-btn {
+                width: 100%;
+
+                select {
+                    width: 50%;
+                }
+
+                button {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .home-tours {
+        .container-div {
+            .home-foreign-tours {
+                gap: 20px;
+
+                .internal-cards {
+                    @include flexColumn;
+                    gap: 20px;
+
+                    .i-card {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:676px) and (max-width:992px) {
+    .advantages {
+        .container-div {
+            @include flexCenter;
+            flex-direction: column;
+            gap: 15px;
+
+            .a-img {
+                position: static;
+                left: 0%;
+                transform: translateX(-00%);
+                margin-top: 0px;
+            }
+
+            .advantage-cards {
+                @include flexCenter;
+                gap: 40px;
+
+                .advantage-left-cards,
+                .advantage-right-cards {
+                    width: 100%;
+                }
+
+            }
+
+        }
+    }
+
+    .home-services {
+        width: 100%;
+        @include flexCenter;
+
+        .container-div {
+            @include gridTwo;
+        }
+    }
+}
+
+
+@media (min-width:992px) and (max-width:1200px) {
+    .home-services {
+        width: 100%;
+        @include flexCenter;
+
+        .container-div {
+            @include gridThree;
         }
     }
 }
