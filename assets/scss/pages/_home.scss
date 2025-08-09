@@ -824,7 +824,7 @@
                     gap: 20px;
 
                     .i-card {
-                        width: 100%;
+                        width: 80%;
                     }
                 }
             }
@@ -868,6 +868,23 @@
             @include gridTwo;
         }
     }
+
+     .home-tours {
+        .container-div {
+            .home-foreign-tours {
+                gap: 20px;
+
+                .internal-cards {
+                    @include gridTwo;
+                    gap: 20px;
+
+                    .i-card {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -878,6 +895,23 @@
 
         .container-div {
             @include gridThree;
+        }
+    }
+
+     .home-tours {
+        .container-div {
+            .home-foreign-tours {
+                gap: 20px;
+
+                .internal-cards {
+                    @include gridThree;
+                    gap: 20px;
+
+                    .i-card {
+                        width: 80%;
+                    }
+                }
+            }
         }
     }
 }
