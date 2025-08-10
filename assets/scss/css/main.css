@@ -251,7 +251,7 @@ header .container-div .menu .header-right {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  column-gap: 30px;
+  column-gap: 20px;
 }
 header .container-div .menu .header-right .lang {
   position: relative;
