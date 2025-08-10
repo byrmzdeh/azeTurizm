@@ -11,6 +11,7 @@
             @include flexCenter;
             max-width: 300px;
             width: 100%;
+            border: 1px dashed $bg-light-grayy;
 
 
             img {
@@ -20,6 +21,7 @@
                 aspect-ratio: 16 / 9;
                 filter: grayscale(100%);
                 transition: 0.4s;
+
 
             }
 

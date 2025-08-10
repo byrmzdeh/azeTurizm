@@ -18,7 +18,14 @@ button {
   cursor: pointer;
 }
 
+:root {
+  --my-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 body {
+  font-family: var(--my-font-sans-serif);
   background-color: #eaeaea;
 }
 
@@ -232,7 +239,6 @@ header .container-div .menu nav ul .tours .dropdown-tours ul .foreign-tours .dro
   left: 160px;
   background-color: white;
   border-radius: 7px;
-  transition: 0.4s;
   display: none;
 }
 header .container-div .menu nav ul .tours .dropdown-tours ul .foreign-tours:hover .dropdown-sec {
@@ -809,6 +815,14 @@ footer .container-div .end a i {
 }
 #one .container-div .content .content-location .locatian-addres .current-page {
   color: white;
+}
+
+.home-slider {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://azeturizm.az/img/paris.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .blog-home {
@@ -1546,6 +1560,7 @@ footer .container-div .end a i {
   justify-content: center;
   max-width: 300px;
   width: 100%;
+  border: 1px dashed rgba(183, 183, 183, 0.2);
 }
 .partners .container-div .partner-card img {
   width: 100%;

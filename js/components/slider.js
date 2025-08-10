@@ -69,3 +69,10 @@ var swiper = new Swiper(".autoSwiper", {
 });
 
 
+
+
+
+AOS.init({
+  duration: 1000,
+  once: true      
+});
