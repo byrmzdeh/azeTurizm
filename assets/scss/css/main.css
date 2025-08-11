@@ -272,7 +272,7 @@ header .container-div .menu .header-right .lang #langs {
   border-radius: 10px;
   height: 0;
   overflow: hidden;
-  transition: 3s ease;
+  transition: height 0.5s ease;
   padding: 0px;
 }
 header .container-div .menu .header-right .lang #langs ul {
@@ -281,7 +281,7 @@ header .container-div .menu .header-right .lang #langs ul {
 header .container-div .menu .header-right .lang #langs ul li {
   display: flex;
   gap: 5px;
-  padding: 6px 12px 6px 10px;
+  padding: 6px 12px 6px 12px;
 }
 header .container-div .menu .header-right .lang #langs ul li a {
   color: black;
@@ -291,6 +291,13 @@ header .container-div .menu .header-right .lang #langs ul li img {
   width: 20px;
   height: 20px;
   font-size: 13px;
+}
+header .container-div .menu .header-right .lang #langs.open {
+  padding-top: 10px;
+  height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 header .container-div .menu .header-right a {
   font-size: 16px;

@@ -148,16 +148,17 @@ header {
             border-radius: 10px;
             height: 0;
             overflow: hidden;
-            transition: 3s ease;
+            transition: height 0.5s ease;
             padding: 0px;
 
             ul {
               padding: 0px 0px;
 
+
               li {
                 display: flex;
                 gap: 5px;
-                padding: 6px 12px 6px 10px;
+                padding: 6px 12px 6px 12px;
 
                 a {
                   color: black;
@@ -171,7 +172,16 @@ header {
                 }
               }
             }
+
+            &.open {
+              padding-top: 10px;
+              height: 115px;
+              @include flexCenter;
+
+            }
           }
+
+
 
 
         }

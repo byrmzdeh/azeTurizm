@@ -16,12 +16,8 @@ const langs = document.getElementById('langs');
 let isVisible = false;
 
 langIcon.addEventListener('click', function () {
-    if (isVisible) {
-        langs.style.height = '0';
-    } else {
-        langs.style.height = 'auto';
-    }
-    isVisible = !isVisible;
+    langs.classList.toggle('open')
+
 });
 
 
