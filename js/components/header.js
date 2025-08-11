@@ -17,7 +17,6 @@ let isVisible = false;
 
 langIcon.addEventListener('click', function () {
     langs.classList.toggle('open')
-
 });
 
 
@@ -59,3 +58,21 @@ bars.addEventListener('click', function () {
 close.addEventListener('click', function () {
     resMenu.style.display = 'none'
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
