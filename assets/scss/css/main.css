@@ -820,8 +820,22 @@ footer .container-div .end a i {
 .home-slider {
   width: 100%;
   height: 100vh;
-  background-image: url("https://azeturizm.az/img/paris.jpg");
-  background-repeat: no-repeat;
+}
+.home-slider .swiper-slide {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   background-size: cover;
 }
 
@@ -961,24 +975,27 @@ footer .container-div .end a i {
   font-weight: bold;
 }
 .home-tours .container-div .home-foreign-tours .internal-cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
+  width: 100%;
 }
-.home-tours .container-div .home-foreign-tours .internal-cards .i-card {
-  min-width: 200px;
+.home-tours .container-div .home-foreign-tours .internal-cards .homeSliderInternal {
+  width: 100%;
+}
+.home-tours .container-div .home-foreign-tours .internal-cards .homeSliderInternal .swiper-wrapper {
+  width: 100%;
+}
+.home-tours .container-div .home-foreign-tours .internal-cards .homeSliderInternal .swiper-wrapper .swiper-slide {
+  width: 100%;
+}
+.home-tours .container-div .home-foreign-tours .internal-cards .homeSliderInternal .swiper-wrapper .swiper-slide .i-card {
   width: 100%;
   min-height: 240px;
   border-radius: 25px;
   transition: 0.4s;
 }
-.home-tours .container-div .home-foreign-tours .internal-cards .i-card .internalSwiper .internalSwiper {
+.home-tours .container-div .home-foreign-tours .internal-cards .homeSliderInternal .swiper-wrapper .swiper-slide .i-card .internalSwiper {
   width: 100%;
-  height: 100%;
 }
-.home-tours .container-div .home-foreign-tours .internal-cards .i-card .internalSwiper .swiper-slide {
+.home-tours .container-div .home-foreign-tours .internal-cards .homeSliderInternal .swiper-wrapper .swiper-slide .i-card .internalSwiper .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #444;
@@ -987,15 +1004,15 @@ footer .container-div .end a i {
   align-items: center;
   border-radius: 15px;
 }
-.home-tours .container-div .home-foreign-tours .internal-cards .i-card .internalSwiper .swiper-slide img {
+.home-tours .container-div .home-foreign-tours .internal-cards .homeSliderInternal .swiper-wrapper .swiper-slide .i-card .internalSwiper .swiper-slide img {
   display: block;
   width: 100%;
   height: 240px;
   object-fit: cover;
   border-radius: 15px;
 }
-.home-tours .container-div .home-foreign-tours .internal-cards .i-card .internalSwiper .swiper-button-next,
-.home-tours .container-div .home-foreign-tours .internal-cards .i-card .internalSwiper .swiper-button-prev {
+.home-tours .container-div .home-foreign-tours .internal-cards .homeSliderInternal .swiper-wrapper .swiper-slide .i-card .internalSwiper .swiper-button-next,
+.home-tours .container-div .home-foreign-tours .internal-cards .homeSliderInternal .swiper-wrapper .swiper-slide .i-card .internalSwiper .swiper-button-prev {
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -1006,38 +1023,38 @@ footer .container-div .end a i {
   display: none;
   --swiper-navigation-size: 14px;
 }
-.home-tours .container-div .home-foreign-tours .internal-cards .i-card .cardInfo {
+.home-tours .container-div .home-foreign-tours .internal-cards .homeSliderInternal .swiper-wrapper .swiper-slide .i-card .cardInfo {
   display: flex;
   flex-direction: column;
   margin-top: 5px;
 }
-.home-tours .container-div .home-foreign-tours .internal-cards .i-card .cardInfo .type {
+.home-tours .container-div .home-foreign-tours .internal-cards .homeSliderInternal .swiper-wrapper .swiper-slide .i-card .cardInfo .type {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.home-tours .container-div .home-foreign-tours .internal-cards .i-card .cardInfo .type .new {
+.home-tours .container-div .home-foreign-tours .internal-cards .homeSliderInternal .swiper-wrapper .swiper-slide .i-card .cardInfo .type .new {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 3px;
   margin-bottom: 0px;
 }
-.home-tours .container-div .home-foreign-tours .internal-cards .i-card .cardInfo .type .new h6 {
+.home-tours .container-div .home-foreign-tours .internal-cards .homeSliderInternal .swiper-wrapper .swiper-slide .i-card .cardInfo .type .new h6 {
   margin-bottom: 0px;
 }
-.home-tours .container-div .home-foreign-tours .internal-cards .i-card .cardInfo .type .new i {
+.home-tours .container-div .home-foreign-tours .internal-cards .homeSliderInternal .swiper-wrapper .swiper-slide .i-card .cardInfo .type .new i {
   font-size: 15px;
   color: black;
 }
-.home-tours .container-div .home-foreign-tours .internal-cards .i-card .cardInfo .price {
+.home-tours .container-div .home-foreign-tours .internal-cards .homeSliderInternal .swiper-wrapper .swiper-slide .i-card .cardInfo .price {
   margin-top: 5px;
 }
-.home-tours .container-div .home-foreign-tours .internal-cards .i-card:hover {
+.home-tours .container-div .home-foreign-tours .internal-cards .homeSliderInternal .swiper-wrapper .swiper-slide .i-card:hover {
   transform: scale(1.02);
 }
-.home-tours .container-div .home-foreign-tours .internal-cards .i-card:hover .swiper-button-next,
-.home-tours .container-div .home-foreign-tours .internal-cards .i-card:hover .swiper-button-prev {
+.home-tours .container-div .home-foreign-tours .internal-cards .homeSliderInternal .swiper-wrapper .swiper-slide .i-card:hover .swiper-button-next,
+.home-tours .container-div .home-foreign-tours .internal-cards .homeSliderInternal .swiper-wrapper .swiper-slide .i-card:hover .swiper-button-prev {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1419,14 +1436,6 @@ footer .container-div .end a i {
   .home-tours .container-div .home-foreign-tours {
     gap: 20px;
   }
-  .home-tours .container-div .home-foreign-tours .internal-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .home-tours .container-div .home-foreign-tours .internal-cards .i-card {
-    width: 100%;
-  }
 }
 @media (min-width: 676px) and (max-width: 992px) {
   .advantages .container-div {
@@ -1465,14 +1474,6 @@ footer .container-div .end a i {
   .home-tours .container-div .home-foreign-tours {
     gap: 20px;
   }
-  .home-tours .container-div .home-foreign-tours .internal-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-  .home-tours .container-div .home-foreign-tours .internal-cards .i-card {
-    width: 100%;
-  }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .home-services {
@@ -1487,14 +1488,6 @@ footer .container-div .end a i {
   }
   .home-tours .container-div .home-foreign-tours {
     gap: 20px;
-  }
-  .home-tours .container-div .home-foreign-tours .internal-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  .home-tours .container-div .home-foreign-tours .internal-cards .i-card {
-    width: 100%;
   }
 }
 .about {

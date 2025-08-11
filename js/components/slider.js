@@ -1,3 +1,50 @@
+var swiper = new Swiper(".homeSwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 1600,
+    disableOnInteraction: false,
+  },
+});
+
+
+var swiper = new Swiper(".homeSliderInternal", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-nextN",
+    prevEl: ".swiper-button-prevN",
+  },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  breakpoints: {
+
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    676: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 25,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    }
+  }
+});
+
+
+
 var swiper = new Swiper(".internalSwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
@@ -74,5 +121,5 @@ var swiper = new Swiper(".autoSwiper", {
 
 AOS.init({
   duration: 1000,
-  once: true      
+  once: true
 });
