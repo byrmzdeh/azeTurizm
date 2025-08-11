@@ -4,7 +4,7 @@ var swiper = new Swiper(".homeSwiper", {
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 1600,
+    delay: 1400,
     disableOnInteraction: false,
   },
 });
@@ -16,10 +16,6 @@ var swiper = new Swiper(".homeSliderInternal", {
   navigation: {
     nextEl: ".swiper-button-nextN",
     prevEl: ".swiper-button-prevN",
-  },
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
   },
   loop: true,
   breakpoints: {
