@@ -161,8 +161,8 @@
 
         .swiper-slide {
             @include flexCenter;
-            max-width: 300px;
-            width: 100%;
+            // max-width: 300px;
+            // width: 100%;
             transition: 0.4s;
 
             img {
@@ -738,6 +738,10 @@
         }
     }
 
+    .blog-home {
+        padding: 0px 0px;
+    }
+
     .advantages {
         width: 70%;
         gap: 30px;
@@ -752,6 +756,7 @@
                 left: 0%;
                 transform: translateX(-00%);
                 margin-bottom: 20px;
+                padding: 0px 20px
             }
 
             .advantage-cards {

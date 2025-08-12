@@ -868,8 +868,6 @@ footer .container-div .end a i {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 300px;
-  width: 100%;
   transition: 0.4s;
 }
 .sliderPartners .autoSwiper .swiper-slide img {
@@ -1345,6 +1343,9 @@ footer .container-div .end a i {
     flex-direction: column;
     align-items: start;
   }
+  .blog-home {
+    padding: 0px 0px;
+  }
   .advantages {
     width: 70%;
     gap: 30px;
@@ -1361,6 +1362,7 @@ footer .container-div .end a i {
     left: 0%;
     transform: translateX(0%);
     margin-bottom: 20px;
+    padding: 0px 20px;
   }
   .advantages .container-div .advantage-cards {
     display: flex;

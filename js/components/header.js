@@ -49,7 +49,8 @@ bars.addEventListener('click', function () {
     if (openMenu) {
         resMenu.style.display = 'none'
     } else {
-        resMenu.style.display = 'block'
+        resMenu.style.display = 'flex'
+        resMenu.style.flexDirection='column'
     }
     openMenu = !openMenu
 })
