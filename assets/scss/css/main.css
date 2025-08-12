@@ -169,6 +169,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 12000;
 }
 header .container-div .menu {
   display: flex;
