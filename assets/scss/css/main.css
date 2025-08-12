@@ -1363,6 +1363,8 @@ footer .container-div .end a i {
   .advantages {
     width: 70%;
     gap: 30px;
+    padding: 40px 0px;
+    gap: 40px;
   }
   .advantages .container-div {
     display: flex;
@@ -1371,12 +1373,11 @@ footer .container-div .end a i {
     flex-direction: column;
   }
   .advantages .container-div .a-img {
-    width: 200%;
+    width: 98%;
     position: static;
     left: 0%;
     transform: translateX(0%);
     margin-bottom: 20px;
-    padding: 0px 20px;
   }
   .advantages .container-div .advantage-cards {
     display: flex;
