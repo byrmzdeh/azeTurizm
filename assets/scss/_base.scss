@@ -1,12 +1,12 @@
 :root {
-  --my-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-    "Noto Sans", "Liberation Sans", Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bg-color: #f0f0f0;
+
 }
 
 body {
-  font-family: var(--my-font-sans-serif);
-  background-color: $bg-color ;
+  font-family: 'Poppins', 'Roboto', 'Open Sans', 'Noto Sans', 'Ubuntu', sans-serif;
+  font-optical-sizing: auto;
+
 
 }
 

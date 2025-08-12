@@ -19,14 +19,12 @@ button {
 }
 
 :root {
-  --my-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-    "Noto Sans", "Liberation Sans", Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bg-color: #f0f0f0;
 }
 
 body {
-  font-family: var(--my-font-sans-serif);
-  background-color: #eaeaea;
+  font-family: "Poppins", "Roboto", "Open Sans", "Noto Sans", "Ubuntu", sans-serif;
+  font-optical-sizing: auto;
 }
 
 html {
@@ -105,6 +103,9 @@ html {
   color: white;
 }
 
+.modal {
+  z-index: 13000;
+}
 .modal .modal-dialog .modal-content .modal-header {
   padding: 20px 50px;
 }
@@ -482,7 +483,7 @@ footer .container-div .upper-part .upper-part-one .media {
   font-size: 1rem;
   line-height: 1.7rem;
   color: #1d1d26;
-  font-weight: 800;
+  font-weight: 700;
 }
 footer .container-div .upper-part .upper-part-one .media .media-icons {
   display: flex;
@@ -501,7 +502,7 @@ footer .container-div .upper-part .upper-part-one .location {
   font-size: 1rem;
   line-height: 1.7rem;
   color: #1d1d26;
-  font-weight: 800;
+  font-weight: 700;
 }
 footer .container-div .upper-part .upper-part-one .make {
   display: flex;
@@ -510,7 +511,7 @@ footer .container-div .upper-part .upper-part-one .make {
 }
 footer .container-div .upper-part .upper-part-one .make span {
   color: #1d1d26;
-  font-weight: 800;
+  font-weight: 700;
 }
 footer .container-div .upper-part .upper-part-one .make img {
   width: 110px;
@@ -771,7 +772,7 @@ footer .container-div .end a i {
 }
 #one .container-div .content .content-info h1 {
   font-size: 2.5rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.2;
   color: white;
 }
