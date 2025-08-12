@@ -268,7 +268,8 @@ header {
     ul {
 
       text-align: center;
-      line-height: 2.2rem;
+      line-height: 2.5rem;
+      padding-left: 0px;
 
       li {
         .toggle-icon {
@@ -395,6 +396,23 @@ header {
           }
         }
       }
+    }
+
+    #res-menu {
+
+      nav {
+        ul {
+          li {
+            line-height: 3rem;
+
+            a {
+              font-size: 30px;
+              font-weight: 800;
+            }
+          }
+        }
+      }
+
     }
   }
 

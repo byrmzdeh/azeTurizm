@@ -369,7 +369,8 @@ header #res-menu #close i {
 }
 header #res-menu ul {
   text-align: center;
-  line-height: 2.2rem;
+  line-height: 2.5rem;
+  padding-left: 0px;
 }
 header #res-menu ul li .toggle-icon {
   transition: 0.5s;
@@ -446,6 +447,13 @@ header #res-menu #res-btn:hover {
   }
   header .container-div .menu .header-right #bars {
     display: block;
+  }
+  header #res-menu nav ul li {
+    line-height: 3rem;
+  }
+  header #res-menu nav ul li a {
+    font-size: 30px;
+    font-weight: 800;
   }
 }
 @media (min-width: 768px) and (max-width: 1300px) {
@@ -1343,8 +1351,14 @@ footer .container-div .end a i {
     flex-direction: column;
     align-items: start;
   }
-  .blog-home {
-    padding: 0px 0px;
+  .blog-home .blog-cards {
+    margin: 40px auto;
+  }
+  .sliderPartners .autoSwiper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0px;
   }
   .advantages {
     width: 70%;
@@ -1390,6 +1404,8 @@ footer .container-div .end a i {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 40px 0px;
+    gap: 40px;
   }
   .home-services .container-div {
     display: flex;
@@ -1909,7 +1925,6 @@ footer .container-div .end a i {
 }
 .blog-cards .container-div .blog-card a p {
   font-size: 16px;
-  font-weight: bold;
   padding-top: 5px;
 }
 .blog-cards .container-div .blog-card a p b {

@@ -739,8 +739,24 @@
     }
 
     .blog-home {
-        padding: 0px 0px;
+        .blog-cards {
+            margin: 40px auto;
+        }
+
     }
+
+
+    .sliderPartners {
+
+        .autoSwiper {
+            @include flexColumn;
+            gap: 40px;
+            padding: 40px 0px;
+
+        }
+    }
+
+
 
     .advantages {
         width: 70%;
@@ -786,6 +802,8 @@
     .home-services {
         width: 100%;
         @include flexCenter;
+        padding: 40px 0px;
+        gap: 40px;
 
         .container-div {
             @include flexColumn;
